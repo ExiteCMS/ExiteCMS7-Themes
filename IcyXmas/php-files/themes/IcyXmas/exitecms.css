@@ -1,0 +1,289 @@
+/* ========================================================= */
+/* ExiteCMS standard CSS tags. Do NOT remove these!          */
+/* ========================================================= */
+
+/* --- General settings ------------------------------------ */
+
+						/* text anchors */
+a						{ color:#7194c0; text-decoration:none; }
+a:hover					{ color:#6aa6c8; text-decoration:none; }
+
+						/* text anchors in side panels */
+a.side					{ color:#7194c0; text-decoration:none; }
+a:hover.side			{ color:#6aa6c8; text-decoration:none; }
+
+						/* image anchors */
+a img					{ border:none; }
+
+						/* horizontal lines */
+hr						{ height:1px; border:1px solid #eee; }
+
+						/* wiki links */
+a.wiki_link:link,a.wiki_link:visited { color:#7194c0; text-decoration:none; border-width:0px 0px 1px 0px; border-style:dotted; border-color:#34329C; }
+
+						/* dropdowns with options */
+optgroup				{ padding-bottom:5px; font-style:normal; }
+
+/* --- HTML form settings ---------------------------------- */
+
+						/* general form definition */
+form					{ margin:0px; }
+
+						/* buttons */
+.button					{ font-size:90%; font-weight:normal; color:#6aa6c8; background-color:#fff; height:20px; border:1px solid #DEDEDE; margin-top:2px; }
+.button:hover			{ color:#fff; background-color:#6aa6c8; }
+
+						/* text entry fields */
+.textbox				{ font-size:95%; color:#6aa6c8; background-color:#fff; border:1px solid #DEDEDE; padding:2px; }
+
+/* --- Website template ------------------------------------ */
+
+						/* page body */
+body					{ font-size:1em; font-family:Tahoma, Arial, Sans-Serif; background-image: url(/themes/IcyXmas/images/bg.gif); background-repeat: repeat-x; margin-top: 30px; }
+.body 					{ margin: 5px 5px 5px 5px; color:#555; background-color:#ffffff; }
+
+						/* content body, can be different from the body when centered */
+.content				{ border:1px solid #6aa6c8; border-top:none; padding: 1px; }
+
+						/* column definitions (left, center, right) */
+.side-border-left		{ color:#777; background-color:#fff; padding:10px 5px 10px 10px; }
+.main-bg				{ color:#555; background-color:#fff; padding:10px 5px 10px 5px; }
+.side-border-right		{ color:#777; background-color:#fff; padding:10px 10px 10px 5px; }
+
+						/* panels in the center column */
+.main-body 				{ color:#555; background-color:#fff; padding:5px; }
+
+						/* panels in the left & right columns (with and without padding, p.e. for images) */
+.side-body				{ color:#6aa6c8; background-color:#fff; padding:4px; }
+.side-body-nm			{ color:#6aa6c8; background-color:#fff; }
+
+						/* tags for sub texts, captions, etc. */ 
+.small					{ font-weight:normal; font-size:90%; }
+.small2					{ font-weight:normal; font-size:90%; color:#555; }
+.smallalt				{ color:#0C386F; font-size:90%; }
+
+						/* title bars within a panel */
+.infobar 				{ color:#000; background-color:#E0E9EF; padding:3px 4px 3px 4px; }
+
+/* --- Browser window centered div ------------------------- */
+
+.splashscreen-h			{ font-size:0.8em; width:800px; position: absolute; top: 50%; left: 0px; width: 100%; margin-top: -150px; text-align: center; min-width: 900px; }
+.splashscreen-v			{ color:#7194c0; background-color:#fff; border:1px solid #6aa6c8; position: relative; text-align: left; width: 500px; height: 250px; margin: 0px auto; }
+
+/* --- Header ---------------------------------------------- */
+
+						/* header definition and background image */
+.headerbanner			{ color:#333; background-color:#eee; padding:0px; }
+
+						/* header menu bar */
+.headermenu				{  }
+
+						/* header menu links */
+.headermenuitem			{  }
+
+/* --- Panels ---------------------------------------------- */
+
+						/* center panel cell definitions */
+.main-panel				{ margin: 0px 0px 0px 0px; }
+
+						/* side panel cell definitions */
+.side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 10px 0px; border:1px #ddd solid; }
+
+						/* center panel title */
+.cap-main				{ font-weight:bold; font-size:110%; color:#fff; background-color:#7194c0; background-image:url(/themes/IcyXmas/images/cap-main.gif); height:30px; padding-top:5px; white-space:nowrap;  }
+
+						/* side panel title */
+.sub-cap-main			{ color:#333; height:30px; padding:0px 2px 0px 2px; background-image:url(/themes/IcyXmas/images/sub-cap-main.gif); background-repeat:repeat-x; }
+
+						/* labels and separators in side panels */
+.side-label				{ font-weight:bold; font-size:110%; color:#6aa6c8; background-color:#fff; margin:2px 0px 2px 0px; padding:1px 1px 2px 1px; white-space:nowrap;overflow:hidden; }
+
+						/* labels and separators in body panels */
+.main-label				{ color:#6aa6c8; background-color:#E0E9EF; font-weight:bold; padding:4px 4px 4px 4px; margin:0px 0px 5px 0px; white-space:nowrap;overflow:hidden; }
+
+						/* links in side panels */
+.side-label-link		{ white-space:nowrap;overflow:hidden;}
+
+						/* positioning of side-panel open/close buttons */
+.side-label-button		{ position:relative; float:right; top:2px; right:2px; }
+
+						/* horizontal lines in side-panels */ hr.side-hr
+						{ border:1px #eee solid; border-bottom:1px #eee solid; }
+
+						/* horizontal lines in side-panels */
+hr.side-hr				{ height:2px; }
+
+/* --- Footer ---------------------------------------------- */
+
+.footer					{ text-align:center; color:#6aa6c8; padding:5px; line-height:125%; }
+.footer img 			{ border: 0px; vertical-align: -30%; }
+
+/* --- Panel content layouts-------------------------------- */
+
+						/* standard table borders */
+.tbl-border				{ color:#777; background-color:#DEDEDE; }
+
+						/* borderless tables */
+.tbl					{ color:#777; background-color:#fff; padding:4px; }
+
+						/* table cells - color 1 */
+.tbl1					{ color:#777; background-color:#fff; padding:4px; }
+
+						/* table cells - color 2 */
+.tbl2					{ color:#777; background-color:#fff; padding:4px; }
+
+						/* user-info cell header */
+.tbl_top_left			{ color:#333333; font-weight: bold; background-color:#a1c4f0; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
+
+						/* user-info cell of a message */
+.tbl_left				{ color:#333333; background-color:#e1f4f0; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
+
+						/* button row at the bottom the user-info cell */
+.tbl_left_bottom		{ background-color:#e1f4f0; padding:4px; border-left: 1px solid #bbbbbb; border-bottom: 1px solid #bbbbbb; }
+
+						/* message subject  */
+.tbl_top_mid			{ font-weight: bold; color:#333333; background-color:#a1c4f0; padding:4px; border-top: 1px solid #bbbbbb; }
+
+						/* button row in the message header */
+.tbl_top_right			{ color:#333333; background-color:#a1c4f0; padding:4px; border-top: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; }
+
+						/* message body */
+.tbl_right		 		{ color:#333; background-color:#fff; padding:4px; border: 1px solid #bbbbbb; }
+
+						/* links in the message body */
+.tbl_right a			{ text-decoration:underline; }
+
+						/* message body, unread message */
+.unread					{ color:#000000; background-color:#e0f5f9; padding:4px; border: 1px solid #bbbbbb; }
+
+						/* quotes within the message body */
+.quote					{ color:#555; background-color:#fff; padding:4px; margin:0px 20px 0px 20px; border:1px #DEDEDE solid; }
+
+						/* code sections within the message body */
+.codeblock 				{ font-size:110%; font-family: courier, monospace; margin:5px 20px 5px 20px; overflow-x:auto; white-space: nowrap}
+.code 					{ margin:0px; padding:0 0 0 5px; border:1px #bbb solid; background-color:#fff; overflow-x:hidden}
+.codenr 				{ margin:0px; padding:0px 3px 0px 3px; border:1px #bbb solid; background-color:#fff; float:left; }
+
+						/* thumbnail caption in the message body */
+.thumbnail				{ color:#ddd;background-color:#333;text-align:center; }
+a.thumbnail				{ color: #ddd; }
+
+						/* horizontal pollbar definition */
+.poll 					{ height:12px; border:1px #DEDEDE solid; }
+
+						/* image display in the album module */
+.album_thumb			{ border-style:outset; border-color:#999; border-width:5px; }
+
+						/* error messages and special notices */
+.errors 				{ text-align:center; font-weight:bold; font-size:110%; color:red; }
+
+/* --- SWF upload module ----------------------------------- */
+
+						/* IE6 fixes */
+html fieldset 			{ position: relative; margin-top:1em; }
+html legend 			{ position:absolute; top: -0.5em; left: .5em; }
+
+						/* upload progress block, border and title */
+.swf_uploadprogress		{ border:1px solid #ccc; margin:0px; padding:25px 10px; }
+.swf_legend 			{ font-size:120%; font-weight:bold; padding:0 5px; margin:0 10px; color:#333; }
+
+						/* div to contain the SWFupload flash module */
+.progressWrapper 		{ width:100%; overflow:hidden; }
+
+.progressContainer 		{ margin:2px; padding:5px; border:solid 1px #444; background-color:#eee; overflow:hidden; }
+.progressContainer_red	{ border:solid 2px red; }
+.progressContainer_green { border:solid 1px #444; }
+.progressContainer_blue	{ border:solid 2px green; }
+.progressName			{ font-weight:bold; color:#666; width:100%; text-align:left; white-space:nowrap; overflow:hidden; }
+.progressBarInProgress	{ font-size:0; width:0%; height: 4px; background-color: blue; margin-top: 2px; }
+.progressBarComplete	{ width:100%; background-color: green; visibility: hidden; }
+.progressBarError		{ width:100%; background-color: red; visibility: hidden; }
+.progressBarStatus		{ margin-top: 2px; width: 100%; font-size: 90%; text-align: left; white-space: nowrap; }
+a.progressCancel 		{ font-size:0; height:16px; width:16px; background-image: url(/themes/ExiteCMS/images/cancel.gif); background-repeat:no-repeat; background-position:0px 0px; float:right; }
+
+/* --- Mootools Lightbox, by Milkbox -------------------------------- */
+
+						/* set the Milkbox overlay color // opacity: see the js options */
+#mbOverlay 				{ position:absolute; left:0; width:100%; background-color:#000; z-index:100; cursor:pointer; }
+
+						/* default Lightbox definition, can be overriden at runtime for proper positioning */
+#mbCenter 				{ position:absolute; z-index:101; overflow:hidden; left:50%; top:10%; background-color:#fff; border:5px solid #fff; margin:0; padding:5px; }
+
+						/* image loading notice */
+.mbLoading				{ background:#fff url(/themes/ExiteCMS/images/ajax-loader.gif) no-repeat center; }
+
+						/* Lightbox image settings */
+#mbImage				{ margin:0; padding:0; height:0; border:none; font-size:0; overflow:hidden; }
+
+						/* div clearing class */
+.clear					{ clear:both; height:0; margin:0; padding:0; font-size:0; overflow:hidden; }
+
+						/* image caption and navigation block, under the image */
+#mbBottom 				{ font-size:1em; color:#666; line-height:1.4em; text-align:left; padding-top:8px; margin:0; }
+
+						/* image caption */
+#mbDescription			{ margin-right:27px; padding:0px 10px 0 0; font-weight: normal; text-align:left; }
+
+						/* Lightbox navigation. Be careful if you change buttons dimensions! */
+#mbNavigation			{ float:right; width:27px; padding-top:3px; border-left:1px solid #9c9c9c; }
+
+						/* Lightbox images counter */
+#mbCount				{ width:55px; overflow:hidden; padding-top:1px; float:right; text-align:right; font-size:9px; }
+
+						/* navigation links */
+#mbCloseLink, #mbPrevLink, #mbNextLink { outline:none; display:block; float:right; height:20px; cursor:pointer; }
+#mbPrevLink, #mbNextLink{ width:17px; }
+#mbPrevLink				{ background:transparent url(/themes/ExiteCMS/images/lb_previous.gif) no-repeat; }
+#mbNextLink				{ background:transparent url(/themes/ExiteCMS/images/lb_next.gif) no-repeat; }
+
+						/* NOTE: doesn't work in ie6, so, just see the js options :) */
+a#mbPrevLink:hover,a#mbNextLink:hover,a#mbCloseLink:hover { background-position: 0 -23px; }
+
+#mbCloseLink 			{ width:20px; background: transparent url(/themes/ExiteCMS/images/lb_close.gif) no-repeat; }
+
+/* --- Upgrade admin module -------------------------------- */
+
+						/* revision title */
+.rev_title				{ color:#333; font-weight:bold; }
+						/* revision title for major revisions */
+.rev_major				{ color:#34329C; font-weight:bold; }
+
+						/* revision description text */
+.rev_desc				{ }
+
+/* ========================================================= */
+/* Add your own custom CSS tags below this line!             */
+/* ========================================================= */
+
+/* --- header elements -------------------------------- */
+
+.outer-border-top		{ border:1px solid #6aa6c8; border-bottom:none; padding: 0; margin-top:10px; }
+.sub-header 			{ color:#fff; background-image:url(/themes/IcyXmas/images/sub_header_bg.gif); background-repeat:repeat-x; height:30px; padding:5px; }
+
+
+/* --- Panel extra elements -------------------------------- */
+
+.border-tleft			{ width:5px; height:16px; background-image:url(/themes/IcyXmas/images/border-tleft.gif); }
+.border-tright			{ width:5px; height:16px; background-image:url(/themes/IcyXmas/images/border-tright.gif); }
+.border-tmain 			{ height:16px; background-image:url(/themes/IcyXmas/images/border-tmain.gif); background-repeat:repeat-x; }
+
+.sub-cap-left			{ width:13px; height:12px; background-image:url(/themes/IcyXmas/images/border-bleft.gif); }
+.sub-cap-right			{ width:13px; height:12px; background-image:url(/themes/IcyXmas/images/border-bright.gif); }
+
+.cap-left				{ width:13px; height:30px; background-image:url(/themes/IcyXmas/images/cap-left.gif); }
+.cap-right				{ width:13px; height:30px; background-image:url(/themes/IcyXmas/images/cap-right.gif); }
+
+.border-left			{ width:13px; height:1px; background-image:url(/themes/IcyXmas/images/border-left.gif); background-repeat:repeat-y; }
+.border-right			{ width:13px; height:1px; background-image:url(/themes/IcyXmas/images/border-right.gif); background-repeat:repeat-y; }
+.border-main			{ height:12px; background-image:url(/themes/IcyXmas/images/border-bmain.gif); background-repeat:repeat-x; }
+
+.border-bleft			{ width:13px; height:12px; background-image:url(/themes/IcyXmas/images/border-bleft.gif); }
+.border-bright			{ width:13px; height:12px; background-image:url(/themes/IcyXmas/images/border-bright.gif); }
+.border-bmain			{ height:12px; background-image:url(/themes/IcyXmas/images/border-bmain.gif); background-repeat:repeat-x; }
+
+.tbl_right a			{ text-decoration:underline; }
+
+/* --- Google Maps ----------------------------------------- */
+
+#tooltip 				{ width: 200px; z-index: 99999;	}
+.tooltip 				{ font-weight:bold;padding: 2px;border:1px #036 solid;border-width:1px 2px 2px 1px;border-color: #000 #666 #666 #000;background-color:#FF9;color: #000;}

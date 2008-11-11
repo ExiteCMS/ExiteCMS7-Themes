@@ -1,14 +1,17 @@
 {***************************************************************************}
-{*                                                                         *}
-{* ExiteCMS template: header.tpl                                           *}
-{*                                                                         *}
+{* ExiteCMS Content Management System                                      *}
 {***************************************************************************}
-{*                                                                         *}
-{* Author: WanWizard <wanwizard@gmail.com>                                 *}
-{*                                                                         *}
-{* Revision History:                                                       *}
-{* 2007-07-01 - WW - Initial version                                       *}
-{*                                                                         *}
+{* Copyright 2006-2008 Exite BV, The Netherlands                           *}
+{* for support, please visit http://www.exitecms.org                       *}
+{*-------------------------------------------------------------------------*}
+{* Released under the terms & conditions of v2 of the GNU General Public   *}
+{* License. For details refer to the included gpl.txt file or visit        *}
+{* http://gnu.org                                                          *}
+{***************************************************************************}
+{* $Id:: _header.tpl 1996 2008-11-10 11:30:08Z WanWizard                  $*}
+{*-------------------------------------------------------------------------*}
+{* Last modified by $Author:: WanWizard                                   $*}
+{* Revision number $Rev:: 1996                                            $*}
 {***************************************************************************}
 {*                                                                         *}
 {* This template generates the ExiteCMS website header.                    *}
@@ -17,77 +20,35 @@
 {*                                                                         *}
 {***************************************************************************}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{$settings.locale_code|truncate:2:""}" lang="{$settings.locale_code|truncate:2:""}" dir="{$smarty.const.LOCALEDIR|lower}">
 
 <head>
-	<title>{$settings.sitename}</title>
+	<title>{$settings.sitename}{if defined('PAGETITLE')} - {$smarty.const.PAGETITLE}{/if}</title>
 	<meta http-equiv='Content-Type' content='text/html; charset={$settings.charset}' />
+	<meta http-equiv='Content-Language' content='{$settings.locale_code|truncate:2:""}' />
 	<meta name='description' content='{$settings.description}' />
 	<meta name='keywords' content='{$settings.keywords}' />
-	<meta name='verify-v1' content='6uLZe0u5c6hJ3XE0LoGBQRuU7IdJ/B6BIa2Si7b1dkw=' />
+	<meta name="verify-v1" content="Ek6JHBkP+IbfHNOB0DaMHmxpC9eAljv3JCcWmUpcF+U=" />
 	{if $headparms|default:false != false}{$headparms}{/if}
-	{include file='_stylesheets.tpl'}
+	<link href="{$smarty.const.THEME}exitecms__0001.css" rel="stylesheet" type="text/css" />
+	{literal}
+	<style type="text/css">
+		.body-maint { margin: 5px 5px 5px 5px; color:#000; background-color:{/literal}{$settings.maintenance_color}{literal}; }
+	</style>
+	{/literal}
 	{if $favicon|default:false != false}<link rel='shortcut icon' href='{$favicon}' />{/if}
-	<script type='text/javascript' src='{$smarty.const.INCLUDES}jscripts/core_functions.js'></script>
+	<script type='text/javascript' src='{$smarty.const.INCLUDES}jscripts/core_functions__0001.js'></script>
 	{if $smarty.const.LOAD_TINYMCE}
-		<script type='text/javascript' src='{$smarty.const.INCLUDES}jscripts/tiny_mce/tiny_mce_gzip.php'></script>
-		{literal}
-		<script type='text/javascript'>
-		function advanced() {
-			tinyMCE.init({
-			mode:'textareas',
-			editor_deselector:'textbox',
-			theme:'advanced',
-			language:'{/literal}{$settings.locale_code}{literal}',
-			entities:'60,lt,62,gt',
-			document_base_url:'{/literal}{$settings.siteurl}{literal}',
-			relative_urls:'false',
-			convert_newlines_to_brs:'true',
-			force_br_newlines:'true',
-			force_p_newlines:'false',
-			plugins : "style,layer,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,zoom,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras",
-			theme_advanced_buttons1 : "bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,styleselect,formatselect,fontselect,fontsizeselect",
-			theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code|,forecolor,backcolor",
-			theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,media,advhr,|,ltr,rtl,|,fullscreen",
-			theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,|,insertdate,inserttime",
-			theme_advanced_toolbar_location:'bottom',
-			theme_advanced_toolbar_align:'center',
-			theme_advanced_path_location:'none',
-			theme_advanced_toolbar_location:'top',
-			content_css:'{/literal}{$smarty.const.THEME}{literal}styles.css',
-			external_image_list_url:'{/literal}{$smarty.const.IMAGES}{literal}imagelist.js',
-			plugin_insertdate_dateFormat:'%d-%m-%Y',
-			plugin_insertdate_timeFormat:'%H:%M:%S',
-			invalid_elements:'script,object,applet,iframe',
-			extended_valid_elements:'a[name|href|target|title|onclick],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name],hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style]'
-			});
-		}
-		function simple() {
-			tinyMCE.init({
-			mode:'textareas',
-			theme:'simple',
-			language:'{/literal}{$settings.locale_code}{literal}',
-			convert_newlines_to_brs:'true',
-			force_br_newlines:'true',
-			force_p_newlines:'false'
-			});
-		}
-		
-		function showtiny(EditorID) {
-			tinyMCE.removeMCEControl(tinyMCE.getEditorId(EditorID));
-			tinyMCE.addMCEControl(document.getElementById(EditorID),EditorID);
-		}
-		
-		function hidetiny(EditorID) {
-			tinyMCE.removeMCEControl(tinyMCE.getEditorId(EditorID));
-		}
-		</script>
-		{/literal}
+		{include file="_load_tinymce.tpl"}
+	{/if}
+	{if $smarty.const.LOAD_HOTEDITOR}
+		{include file="_load_hoteditor.tpl"}
 	{/if}
 </head>
 
-<body {if $bodyparms|default:false != false}{$bodyparms}{/if} {if $userdata.user_level == 103 || $settings.maintenance}class='body-maint'{else}class='body'{/if}>
+<body {if $bodyparms|default:false != false}{$bodyparms}{/if} {if $userdata.user_id == 1 || $settings.maintenance}class='body-maint'{else}class='body'{/if}>
 <a name="page_top" id="page_top"></a>
+
 {literal}
 <script type='text/javascript'></script>
 <script type='text/javascript'>
