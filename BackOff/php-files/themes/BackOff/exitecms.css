@@ -20,14 +20,13 @@
 
 						/* text anchors */
 a 						{ color:#6f6d6d; text-decoration:none; }
-a:hover 				{ color:#505050; text-decoration:none; }
+a:link 					{ color:#6f6d6d; text-decoration:none; }
+a:visited 				{ color:#6f6d6d; text-decoration:none; }
+a:hover 				{ color:#3f3d3d; text-decoration:underline; }
 
 						/* text anchors in side panels */
 a.side 					{ color:#000; text-decoration:none; }
 a:hover.side 			{ color:#505050; text-decoration:none; }
-
-a.white 				{ color:#fff; text-decoration:none; font-weight:bold; }
-a:hover.white 			{ color:#000; text-decoration:underline; }
 
 						/* image anchors */
 a img					{ border:none; }
@@ -36,9 +35,7 @@ a img					{ border:none; }
 a.wiki_link:link,a.wiki_link:visited { color:#6f6d6d; text-decoration:none; border-width:0px 0px 1px 0px; border-style:dotted; border-color:#34329C; }
 
 						/* horizontal lines */
-hr 						{ height:0px; border:solid #CCCCCC 1px; border-top-width: 1px; }
-
-.seperator 				{ color:#a3b0ba; }
+hr 						{ color:#a3b0ba; height:0px; border:solid #CCCCCC 1px; border-top-width: 1px; }
 
 						/* dropdowns with options */
 optgroup				{ padding-bottom:5px; font-style:normal; }
@@ -49,42 +46,42 @@ optgroup				{ padding-bottom:5px; font-style:normal; }
 form					{ margin:0px; }
 
 						/* buttons */
-.button 				{ font-family:Tahoma; font-size:10px; color:#fff; background-color:#818181; border:1px #8A8573 solid; margin-top:2px; width:auto; overflow:visible; cursor:pointer; }
-.button:hover			{ font-family:Tahoma; font-size:10px; color:#818181; background-color:#eee; border:1px #8A8573 solid; margin-top:2px; width:auto; overflow:visible; cursor:pointer; }
+.button 				{ font-family:Tahoma; font-size:90%; color:#fff; background-color:#818181; border:1px #8A8573 solid; margin-top:2px; width:auto; overflow:visible; cursor:pointer; }
+.button:hover			{ font-family:Tahoma; font-size:90%; color:#818181; background-color:#eee; border:1px #8A8573 solid; margin-top:2px; width:auto; overflow:visible; cursor:pointer; }
 
 						/* text entry fields */
-.textbox				{ background: #EAE9E4 url(images/bg_body.gif); font-family:Tahoma; font-size:10px; color:#000; background-color:#E8E8E8; border:1px #8A8573 solid; }
+.textbox				{ background: #EAE9E4; font-family:Tahoma; font-size:1em; color:#000; background-color:#E8E8E8; border:1px #8A8573 solid; }
 
 /* --- Website template ------------------------------------ */
 
 						/* page body */
-body					{ font-size:10px; font-family:Tahoma,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; padding:0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
-.body 					{ color:#444; background-color:#aaa; }
+body					{ background-color:#828282; font-size:1em; font-family:Tahoma,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; padding:0px 0px 0px 0px; margin: 0px 0px 0px 0px; }
+.body 					{ color:#fff; background-color:#828282; }
 
 .bodyline 				{ background:#9A978E; color:#a3b0ba; border:1px solid #FFFFFF; }
 
 						/* content body, can be different from the body when centered */
-.content				{ }
+.content				{ background-color:#fff; }
 
 						/* column definitions (left, center, right) */
-.side-border-left 		{ border-right : 1px solid #e1e1e1; padding : 5px; }
+.side-border-left 		{ border-right : 1px solid #e1e1e1; padding: 5px; }
 .main-bg				{ background-color:#fff; }
-.side-border-right 		{ border-left : 1px solid #e1e1e1; padding : 5px; }
+.side-border-right 		{ border-left : 1px solid #e1e1e1; padding: 5px; }
 
 						/* panels in the center column */
-.main-body 				{ font-family:Tahoma; font-size:11px; color:#000; background-color:#fff; padding:3px 4px 3px 4px; }
+.main-body 				{ font-family:Tahoma; font-size:110%; color:#000; background-color:#fff; padding:3px 4px 3px 4px; }
 
 						/* panels in the left & right columns (with and without padding, p.e. for images) */
-.side-body				{ font-family:Tahoma; font-size:10px; color:#000; padding:4px 4px 6px 4px; background-color:#fff; }
-.side-body-nm			{ font-family:Tahoma; font-size:10px; color:#000; background-color:#fff; }
+.side-body				{ font-family:Tahoma; font-size:1em; color:#000; padding:4px 4px 6px 4px; background-color:#fff; }
+.side-body-nm			{ font-family:Tahoma; font-size:1em; color:#000; background-color:#fff; }
 
 						/* tags for sub texts, captions, etc. */ 
-.small 					{ font-size:11px; font-weight:normal; color:#000; }
-.small2 				{ font-size:10px; font-weight:normal; color:#000; }
-.smallalt 				{ font-size:9px; font-weight:normal; color:#000; }
+.small 					{ font-size:90%; font-weight:normal; color:#000; }
+.small2 				{ font-size:90%; font-weight:normal; color:#000; }
+.smallalt 				{ font-size:90%; font-weight:normal; color:#000; }
 
 						/* title bars within a panel */
-.infobar 				{ font-weight:normal; color:#333; background-color:#ddd; padding:3px 4px 3px 4px; }
+.infobar 				{ font-size:90%; font-weight:bold; color:#000; background-color:#eee; padding:3px 4px 3px 4px; }
 
 /* --- Browser window centered div ------------------------- */
 
@@ -94,10 +91,10 @@ body					{ font-size:10px; font-family:Tahoma,"Bitstream Vera Sans","Deja Vu San
 /* --- Header ---------------------------------------------- */
 
 						/* header definition and background image */
-.headerbanner			{ color:#333; background-color:#eee; background-image:url(/themes/ExiteCMS/images/exitecms_bg.gif); padding:0px; }
+.headerbanner			{ color:#333; background-color:#828282; background-image:url(images/logo.gif); padding:0px; }
 
 						/* header menu bar */
-.headermenu				{ font-weight:normal; color:#ffffff; background-color:#666666; padding:0px 2px 0px 2px; }
+.headermenu				{ background: #fff; font-family:Tahoma; font-size:1em; color: #7a7a7a; height:19px; padding:4px 4px 4px 4px; }
 
 						/* header menu links */
 .headermenuitem			{ font-weight:normal; color:#fff; }
@@ -105,16 +102,16 @@ body					{ font-size:10px; font-family:Tahoma,"Bitstream Vera Sans","Deja Vu San
 /* --- Panels ---------------------------------------------- */
 
 						/* center panel cell definitions */
-.main-panel				{ padding: 5px 5px 5px 5px; margin:0px 0px 5px 0px; border:1px #ddd solid; }
+.main-panel				{ padding: 5px 5px 5px 5px; margin:0px 0px 5px 0px; }
 
 						/* side panel cell definitions */
-.side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 5px 0px; border:1px #ddd solid; }
+.side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 5px 0px; }
 
 						/* center panel title */
-.cap-main				{ font-family:Tahoma; font-size:10px; font-weight:bold; border-width:1px 1px 1px 1px; border-color:#b2b3be; border-style:solid; color:#000; height:24px; padding:2px 2px 2px 2px; }
+.cap-main				{ background: #fff; border-bottom : 1px dotted #818181; color: #818181; font-size:120%; font-family:Tahoma; font-weight: bold; text-align: left; height: 18px; padding:2px 4px 2px 4px; }
 
 						/* side panel title */
-.sub-cap-main			{ font-family:Tahoma; font-size:10px; font-weight:bold; color:#a3b0ba; height:19px; padding:2px 2px 2px 2px; border-width:1px 0px 1px 0px; border-color:#b2b3be #b2b3be #b2b3be #b2b3be; border-style:solid; }
+.sub-cap-main			{ background: #fff; border-bottom : 1px dotted #818181; color: #818181; font-size:1em; font-family:Tahoma; font-weight: bold; text-align: left; height: 18px; padding:2px 4px 2px 4px; }
 
 						/* labels and separators in side panels */
 .side-label 			{ background-color:#eeeeee; font-weight:normal; color:#000; padding:2px; }
@@ -133,7 +130,7 @@ hr.side-hr 				{ height:0px; #CCCCCC; border:solid # 0px; border-top-width:1px; 
 
 /* --- Footer ---------------------------------------------- */
 
-.footer					{ text-align:center; color: #555; line-height:125%; }
+.footer					{ text-align:center; padding:0px 4px 0px 4px; color: #000; font-family:Tahoma; }
 .footer img 			{ border: 0px; vertical-align: -30%; }
 
 /* --- Panel content layouts-------------------------------- */
@@ -142,13 +139,13 @@ hr.side-hr 				{ height:0px; #CCCCCC; border:solid # 0px; border-top-width:1px; 
 .tbl-border 			{ background-color:#CCCCCC; }
 
 						/* borderless tables */
-.tbl 					{ font-size:11px; padding:3px 4px 3px 4px; }
+.tbl 					{ font-size:100%; padding:3px 4px 3px 4px; }
 
 						/* table cells - color 1 */
-.tbl1 					{ font-size:11px; color:#000; background-color:#fff; padding:4px; }
+.tbl1 					{ font-size:100%; color:#000; background-color:#fff; padding:4px; }
 
 						/* table cells - color 2 */
-.tbl2 					{ font-size:11px; color:#000; background-color:#fff; padding:4px; }
+.tbl2 					{ font-size:100%; color:#000; background-color:#eee; padding:4px; }
 
 						/* user-info cell header */
 .tbl_top_left			{ color:#333; background-color:#eee; font-weight: bold; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
@@ -272,5 +269,5 @@ a#mbPrevLink:hover,a#mbNextLink:hover,a#mbCloseLink:hover { background-position:
 /* Add your own custom CSS tags below this line!             */
 /* ========================================================= */
 
-td 						{ font-family:Tahoma; font-size:10px; }
-pre 					{ font-family:Tahoma; font-size:11px; }
+td 						{ font-family:Tahoma; font-size:95%; }
+pre 					{ font-family:Tahoma; font-size:100%; }

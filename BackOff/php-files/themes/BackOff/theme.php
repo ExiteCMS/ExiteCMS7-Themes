@@ -7,6 +7,10 @@
 +----------------------------------------------------------------------+
 | Some code derived from PHP-Fusion, copyright 2002 - 2006 Nick Jones  |
 +----------------------------------------------------------------------+
+| Original BackOff theme by Benjamin Eriksen © 2007                    |
+| Web: http://phpfusion.org - Wmail: webmaster@phpfusion.org           |
+| Theme converted to ExiteCMS by WanWizard                             |
++----------------------------------------------------------------------+
 | Released under the terms & conditions of v2 of the GNU General Public|
 | License. For details refer to the included gpl.txt file or visit     |
 | http://gnu.org                                                       |
@@ -55,8 +59,8 @@ theme_init();
 +----------------------------------------------------*/
 
 // theme width definitions
-define('THEME_WIDTH', "994");
-define('SIDE_WIDTH', "170");
+define('THEME_WIDTH', "900");
+define('SIDE_WIDTH', "175");
 
 // make sure this is defined, we need it later
 if (!defined('FULL_SCREEN')) define('FULL_SCREEN', false);
