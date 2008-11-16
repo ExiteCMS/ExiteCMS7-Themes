@@ -152,18 +152,15 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 				<tr>
 					<td class='headerbanner'>
 						<table cellpadding='0' cellspacing='0' width='100%'>
-							<tr  align='center'>
-								<td >
+							<tr align='center'>
+								<td>
 									<table border='0' width='100%'>
-										<tr style='height:55px'>
-											<td align='right'>
-												{* room for other text *}
+										<tr style='height:66px;'>
+											<td align='left'>
+												<font size='6'><b>{$settings.sitename}</b></font>
 											</td>
-										</tr>
-										<tr style='height:55px'>
 											<td align='right'>
-											{if $settings.maintenance}
-												<br />
+											{if 1 || $settings.maintenance}
 												<font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE&nbsp;</b></font>
 											{/if}
 											</td>
@@ -193,7 +190,7 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 							{if $smarty.section.index.first} &nbsp;{else} &middot;{/if} <a href='{$headermenu[index].link_url}' {if $headermenu[index].link_window == 1}target='_blank' {/if}><span class='headermenuitem'>{$headermenu[index].link_name}</span></a>
 						{/section}
 					</td>
-					<td align='right' class='sub-cap-main'>
+					<td align='right' class='headermenu'>
 						{$smarty.now|date_format:"subheaderdate"}&nbsp;
 					</td>
 				</tr>

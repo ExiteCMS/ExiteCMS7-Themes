@@ -21,14 +21,12 @@
 {*    style = css tag name to use for the panel body. Default = 'main-body'*}
 {*                                                                         *}
 {***************************************************************************}
-<table cellpadding='0' cellspacing='0' width='100%' class='main-panel'>
-	<tr align='center'>
-		<td>
-			<table cellpadding='0' cellspacing='0' width='100%'>
-				<tr>
-					<td class='cap-main'>
-						{$title|default:"&nbsp;"}
-					</td>
+<table cellpadding='0' cellspacing='0' width='100%' style='margin-top:5px;'>
+	<tr>
+		<td class='main-panel'>
+			<table width='100%' cellpadding='0' cellspacing='0'>
+				<tr class='main-panel'>
+					<td class='cap-main'>{$title|default:"&nbsp;"}</td>
 				</tr>
 				<tr>
-					<td class='{$style|default:"main-body"}'>
+				<td class='{$style|default:"main-body"}'>

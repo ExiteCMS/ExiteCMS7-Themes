@@ -21,11 +21,11 @@
 {*    style = css tag name to use for the panel body. Default = 'side-body'*}
 {*                                                                         *}
 {***************************************************************************}
-<table cellpadding='0' cellspacing='0' width='100%' class='side-panel'>
+<table cellpadding='0' cellspacing='0' width='100%' style='margin-top:5px;'>
 	<tr>
-		<td style='padding:5px;'>
+		<td class='side-panel'>
 			<table width='100%' cellpadding='0' cellspacing='0'>
-				<tr>
+				<tr class='side-panel'>
 					<td class='sub-cap-main'>{$title|default:"&nbsp;"}</td>
 				</tr>
 				<tr>

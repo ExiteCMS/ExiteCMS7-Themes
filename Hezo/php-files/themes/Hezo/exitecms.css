@@ -19,21 +19,23 @@
 /* --- General settings ------------------------------------ */
 
 						/* text anchors */
-a						{ color:#333333; text-decoration:none; }
-a:hover					{ color:#333333; text-decoration:underline; }
+a						{ color:#666; text-decoration:none; }
+a:link					{ color:#666; text-decoration:none; }
+a:visited				{ color:#666; text-decoration:none; }
+a:hover					{ color:#DE8300A; text-decoration:underline; }
 
 						/* text anchors in side panels */
-a.side					{ color:#333333; text-decoration:none; }
-a:hover.side			{ color:#333333; text-decoration:underline; }
+a.side					{ color:#000000; text-decoration:none; }
+a:hover.side			{ color:#EC8701; text-decoration:underline; }
 
 						/* image anchors */
 a img					{ border:none; }
 
 						/* wiki links */
-a.wiki_link:link,a.wiki_link:visited { color:#34329C; text-decoration:none; border-width:0px 0px 1px 0px; border-style:dotted; border-color:#34329C; }
+a.wiki_link:link,a.wiki_link:visited { color:#DE8300A; text-decoration:none; border-width:0px 0px 1px 0px; border-style:dotted; border-color:#34329C; }
 
 						/* horizontal lines */
-hr						{ border:none; color:#bbb; background-color:#bbb; height:1px; }
+hr						{ border-top:1px #CBD6DD solid; border-bottom:1px #EFEFEF solid; }
 
 						/* dropdowns with options */
 optgroup				{ padding-bottom:5px; font-style:normal; }
@@ -44,40 +46,39 @@ optgroup				{ padding-bottom:5px; font-style:normal; }
 form					{ margin:0px; }
 
 						/* buttons */
-.button					{ font-size:0.8em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; font-weight:normal; width:auto; overflow:visible; font-weight: bold; color:#ffffff; background-color:#666; border-top:1px #bbb solid; border-left:1px #bbb solid; border-bottom:1px #000 solid; border-right:1px #000 solid; cursor:pointer; margin:2px 0px 2px 0px; padding:0px; }
+.button					{ font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1em; font-weight: bold; border-top: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc; border-right: 1px solid #000; border-bottom: 1px solid #000; background-color: #d4d4d4; color: #000000; margin-top:2px; cursor:pointer; cursor: hand; }
 .button:hover			{ color:#666; background-color:#ddd; border-top:1px #999 solid; border-left:1px #999 solid; border-bottom:1px #fff solid; border-right:1px #fff solid; }
 
 						/* text entry fields */
-.textbox				{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; color:#444; background-color:#fff; border:1px #444 solid; }
+.textbox				{ border-top: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; color: #42435A; background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1.1em; }
 
 /* --- Website template ------------------------------------ */
 
 						/* page body */
-body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; margin:4px 10px 5px 10px; width:100%; }
-.body 					{ color:#444; background-color:#aaa; }
+body					{ margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1em; color: #38394B; background-color: #ededed; }
+.body 					{ color: #38394B; background-color: #ededed; }
 
 						/* content body, can be different from the body when centered */
 .content				{ }
 
 						/* column definitions (left, center, right) */
-.side-border-left		{ text-align:left; padding:0px 5px 0px 0px; }
-.main-bg				{ color:#444; padding:0px 0px 5px 0px; }
-.side-border-right		{ text-align:left; padding:0px 0px 0px 5px; }
+.side-border-left		{ padding-right:5px; }
+.main-bg				{ }
+.side-border-right		{ padding-left:5px;}
 
 						/* panels in the center column */
-.main-body 				{ text-align:left; color:#444; background-color:#fff; padding:4px 4px 6px 4px; margin:0px; }
-
+.main-body 				{ background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1em; color: #38394B; padding: 6px 6px 3px 6px; border-top: 1px solid #dcdcdc; border-bottom: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; }
 						/* panels in the left & right columns (with and without padding, p.e. for images) */
-.side-body				{ color:#000; background-color:#fff; padding:4px 4px 6px 4px; }
-.side-body-nm			{ color:#000; background-color:#fff; }
+.side-body				{ background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1em; color: #38394B; margin:0px; padding: 6px 6px 3px 6px; border-top: 0px; border-bottom: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; }
+.side-body-nm			{ background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1em; color: #38394B;  }
 
 						/* tags for sub texts, captions, etc. */ 
-.small					{ font-weight:normal; font-size:90%; color:#444; }
-.small2					{ font-weight:normal; font-size:90%; color:#666; }
-.smallalt				{ font-weight:normal; font-size:90%; color:#888; }
+.small					{ font-weight:normal; font-size:90%; color:#555; }
+.small2					{ font-weight:normal; font-size:90%; color:#555; }
+.smallalt				{ font-weight:normal; font-size:90%; color:#555; }
 
 						/* title bars within a panel */
-.infobar 				{ font-weight:normal; color:#333; background-color:#ddd; padding:3px 4px 3px 4px; }
+.infobar 				{ font-weight:bold; font-size:110%; color:#111; padding:3px 4px 3px 4px; }
 
 /* --- Browser window centered div ------------------------- */
 
@@ -87,10 +88,10 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 /* --- Header ---------------------------------------------- */
 
 						/* header definition and background image */
-.headerbanner			{ color:#333; background-color:#eee; background-image:url(/themes/ExiteCMS/images/exitecms_bg.gif); padding:0px; }
+.headerbanner			{ 	background: #23628B url(images/bg_header.jpg) repeat-x left top; }
 
 						/* header menu bar */
-.headermenu				{ font-weight:normal; color:#ffffff; background-color:#666666; padding:0px 2px 0px 2px; }
+.headermenu				{ font-weight:normal; color:#666; background-color:#ededed; padding:0px 2px 0px 2px; }
 
 						/* header menu links */
 .headermenuitem			{ font-weight:normal; color:#fff; }
@@ -98,22 +99,22 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 /* --- Panels ---------------------------------------------- */
 
 						/* center panel cell definitions */
-.main-panel				{ padding: 5px 5px 5px 5px; margin:0px 0px 5px 0px; border:1px #ddd solid; }
+.main-panel				{ background: #24638C url(images/bg_table_top.jpg) repeat-x left top; color: #FFFFFF; height:28px; border-bottom: 0px solid #FFFFFF; }
 
 						/* side panel cell definitions */
-.side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 5px 0px; border:1px #ddd solid; }
+.side-panel				{ background: #24638C url(images/bg_table_top.jpg) repeat-x left top; color: #FFFFFF; height:28px; border-bottom: 0px solid #FFFFFF; }
 
 						/* center panel title */
-.cap-main				{ font-weight:normal; text-align:left; color:#ffffff; background-color: #666666; font-size:1.2em; padding:3px 2px 3px 2px; }
+.cap-main				{ font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1.2em; letter-spacing: .1em; font-weight: bold; color: #FFFFFF; padding: 0px 0px 0px 5px; margin: 0; background-color: transparent; white-space: nowrap; }
 
 						/* side panel title */
-.sub-cap-main			{ font-weight:normal; color:#ffffff; background-color:#666666; padding:0px 2px 0px 2px; }
+.sub-cap-main			{ font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1em; letter-spacing: .1em; font-weight: bold; color: #FFFFFF; padding: 0px 0px 0px 5px; margin-top: 0; background-color: transparent; white-space: nowrap; }
 
 						/* labels and separators in side panels */
-.side-label				{ color:#333; background-color:#ddd; margin:2px 0px 2px 0px; padding:1px 0px 1px 8px; white-space:nowrap;overflow:hidden; }
+.side-label				{ font-weight:bold; padding:2px 2px 3px 2px; }
 
 						/* labels and separators in body panels */
-.main-label				{ color:#333; background-color:#ddd; padding:4px 4px 4px 4px; margin:0px 0px 5px 0px; border:1px #eee solid; white-space:nowrap;overflow:hidden; }
+.main-label				{ background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; padding:4px 4px 4px 4px; margin:0px 0px 5px 0px; border:1px #eee solid; white-space:nowrap;overflow:hidden; }
 
 						/* links in side panels */
 .side-label-link		{ white-space:nowrap;overflow:hidden;}
@@ -122,29 +123,29 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 .side-label-button		{ position:relative; float:right; top:2px; right:2px; }
 
 						/* horizontal lines in side-panels */
-hr.side-hr				{ height:2px; }
+hr.side-hr 				{ border-top:1px #CBD6DD solid; border-bottom:1px #EFEFEF solid; }
 
 /* --- Footer ---------------------------------------------- */
 
-.footer					{ text-align:center; color: #555; line-height:125%; }
+.footer					{ text-align:center; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:1em; color:#000000; background-color:#EDEDED; background-image:url(images/footer.jpg);	background-repeat:repeat-x; border-top:1px #dcdcdc solid; padding:5px; }
 .footer img 			{ border: 0px; vertical-align: -30%; }
 
 /* --- Panel content layouts-------------------------------- */
 
 						/* standard table borders */
-.tbl-border				{ background-color:#ddd; color:#ddd; }
+.tbl-border				{ background-color:#ADC1CE; }
 
 						/* borderless tables */
-.tbl					{ padding:4px; color:#444; background-color:#fff; }
+.tbl					{ font-size:1em; color:#555; padding:0px; }
 
 						/* table cells - color 1 */
-.tbl1					{ padding:4px; color:#444; background-color:#fff; }
+.tbl1					{ font-size:1em; background-color:#EDEDED; color: #38394B; padding: 3px 6px 3px 6px; border-top: 1px solid #FFFFFF; border-bottom: 0px solid #dcdcdc; border-left: 1px solid #FFFFFF; border-right: 0px solid #dcdcdc; }
 
 						/* table cells - color 2 */
-.tbl2					{ padding:4px; color:#444; background-color:#eee; }
+.tbl2					{ font-size:1em; background-color:#EEF1F3; color: #38394B; padding: 3px 6px 3px 6px; border-top: 1px solid #FFFFFF; border-bottom: 0px solid #ADC1CE; border-left: 1px solid #FFFFFF; border-right: 0px solid #ADC1CE; }
 
 						/* user-info cell header */
-.tbl_top_left			{ color:#333; background-color:#eee; font-weight: bold; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
+.tbl_top_left			{ background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; font-weight: bold; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
 
 						/* user-info cell of a message */
 .tbl_left				{ color:#333; background-color:#fff; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
@@ -153,10 +154,10 @@ hr.side-hr				{ height:2px; }
 .tbl_left_bottom		{ color:#333; background-color:#fff; padding:4px; border-left: 1px solid #bbbbbb; border-bottom: 1px solid #bbbbbb; }
 
 						/* message subject  */
-.tbl_top_mid			{ color:#333; background-color:#eee; font-weight: bold; padding:4px; border-top: 1px solid #bbbbbb; }
+.tbl_top_mid			{ background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; font-weight: bold; padding:4px; border-top: 1px solid #bbbbbb; }
 
 						/* button row in the message header */
-.tbl_top_right			{ color:#333333; background-color:#eee; padding:4px; border-top: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; }
+.tbl_top_right			{ background: #EDEDED url(images/bg_td_one.jpg) repeat-x left top; border-top: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; }
 
 						/* message body */
 .tbl_right		 		{ color:#333; background-color:#fff; padding:4px; border: 1px solid #bbbbbb; }
@@ -185,7 +186,7 @@ a.thumbnail				{ color: #ddd; }
 .errors 				{ text-align:center; font-weight:bold; font-size:110%; color:red; }
 
 						/* horizontal pollbar definition */
-.poll 					{ height:12px; border:1px #000 solid; }
+.poll 					{ height:12px; border:1px #dcdcdc solid; }
 
 /* --- SWF upload module ----------------------------------- */
 
@@ -264,3 +265,7 @@ a#mbPrevLink:hover,a#mbNextLink:hover,a#mbCloseLink:hover { background-position:
 /* ========================================================= */
 /* Add your own custom CSS tags below this line!             */
 /* ========================================================= */
+
+td 						{ font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; }
+
+pre 					{ font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; }

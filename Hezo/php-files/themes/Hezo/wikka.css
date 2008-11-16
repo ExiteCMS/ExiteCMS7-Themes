@@ -30,27 +30,12 @@ input.highlight {
 	padding-top: 0px;
 }
 
-.header a:hover {
-	background: transparent;
-	border-bottom: 0px;
-}
-
 .page {
 	color: #000;
 	background-color: #fff;
 	padding: 10px;
 	border: 1px #ddd solid;
 	height: 100%;
-}
-
-.page a {
-	color: #34329C;
-	text-decoration: none;
-}
-
-.page a:hover {
-	color: #34329C;
-	text-decoration: underline;
 }
 
 .pagefooter {
@@ -474,11 +459,11 @@ form, h1, h2, h3, h4, h5 {
 }
 
 a.ext {
-	color: #34329C;
+	color: #6f6d6d;
 }
 
 a.ext:hover {
-	color: #34329C;
+	color: #6f6d6d;
 }
 
 .exttail {
