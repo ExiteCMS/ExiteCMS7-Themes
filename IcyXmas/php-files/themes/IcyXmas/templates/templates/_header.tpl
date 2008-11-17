@@ -118,19 +118,12 @@ function fontReset(aantal) {
 						<table border='0' width='100%'>
 							<tr style='height:55px'>
 								<td>
-								{if $settings.siteurl != "http://www.pli-images.org/" && $settings.siteurl != "http://pli-images.org/"}
-									{if $settings.siteurl == "http://dev.pli-images.org/"}
-										<center><font size='6' color='{$settings.maintenance_color}'><b>STAGING</b></font></center>
-									{else}
-										<center><font size='6' color='{$settings.maintenance_color}'><b>DEVELOPMENT</b></font></center>
-									{/if}
-								{/if}
+									<center><font size='6'>{$settings.sitename}</font></center>
 								</td>
 							</tr>
 							<tr style='height:55px'>
 								<td>
 								{if $settings.maintenance}
-									<br />
 									<center><font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE MODE</b></font></center>
 								{/if}
 								</td>

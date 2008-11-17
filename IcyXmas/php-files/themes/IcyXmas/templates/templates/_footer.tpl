@@ -1,14 +1,17 @@
 {***************************************************************************}
-{*                                                                         *}
-{* ExiteCMS - template: footer.tpl                                         *}
-{*                                                                         *}
+{* ExiteCMS Content Management System                                      *}
 {***************************************************************************}
-{*                                                                         *}
-{* Author: WanWizard <wanwizard@gmail.com>                                 *}
-{*                                                                         *}
-{* Revision History:                                                       *}
-{* 2007-07-01 - WW - Initial version                                       *}
-{*                                                                         *}
+{* Copyright 2006-2008 Exite BV, The Netherlands                           *}
+{* for support, please visit http://www.exitecms.org                       *}
+{*-------------------------------------------------------------------------*}
+{* Released under the terms & conditions of v2 of the GNU General Public   *}
+{* License. For details refer to the included gpl.txt file or visit        *}
+{* http://gnu.org                                                          *}
+{***************************************************************************}
+{* $Id:: _header.tpl 1996 2008-11-10 11:30:08Z WanWizard                  $*}
+{*-------------------------------------------------------------------------*}
+{* Last modified by $Author:: WanWizard                                   $*}
+{* Revision number $Rev:: 1996                                            $*}
 {***************************************************************************}
 {*                                                                         *}
 {* This template generates the ExiteCMS website footer.                    *}
@@ -22,15 +25,14 @@
 			<table align='center' cellpadding='0' cellspacing='0' width='100%'>
 				<tr>
 					<td>
-						v.{$settings.version} <a href='http://exitecms.exite.eu' target='_blank'><img src='{$smarty.const.IMAGES}cms-logo-small.png' alt='' /></a> rev.{$settings.revision}<br />
+						v.{$settings.version} <a href='http://www.exitecms.org' target='_blank' title='ExiteCMS v7.2 ©2008 Exite BV'><img src='{$smarty.const.IMAGES}cms-logo-small.png' alt='' /></a> rev.{$settings.revision}<br />
 						{$settings.counter} {if $settings.counter == 1}{$locale.140}{else}{$locale.141}{/if}
 					</td>
 				</tr>
-				{if $settings.siteurl != "http://www.pli-images.org/"}
 				<tr>
 					<td>
 						<br />
-						The webserver needed {$_loadstats.time|string_format:"%01.3f"} sec. to process this page. Of that, the database engine needed {$_loadstats.querytime|string_format:"%01.3f"} sec.
+						The webserver needed {$_loadstats.time|string_format:"%01.3f"} sec. to process this page. Of that, the MySQL v{$MySQLinfo} engine needed {$_loadstats.querytime|string_format:"%01.3f"} sec.
 					</td>
 				</tr>
 				<tr>
@@ -44,7 +46,6 @@
 						zlib compression is enabled for this website
 					</td>
 				</tr>
-				{/if}
 				{/if}
 			</table>
 		</td>

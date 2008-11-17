@@ -1,14 +1,17 @@
 {***************************************************************************}
-{*                                                                         *}
-{* ExiteCMS include template: _opentable.tpl                               *}
-{*                                                                         *}
+{* ExiteCMS Content Management System                                      *}
 {***************************************************************************}
-{*                                                                         *}
-{* Author: WanWizard <wanwizard@gmail.com>                                 *}
-{*                                                                         *}
-{* Revision History:                                                       *}
-{* 2007-07-01 - WW - Initial version                                       *}
-{*                                                                         *}
+{* Copyright 2006-2008 Exite BV, The Netherlands                           *}
+{* for support, please visit http://www.exitecms.org                       *}
+{*-------------------------------------------------------------------------*}
+{* Released under the terms & conditions of v2 of the GNU General Public   *}
+{* License. For details refer to the included gpl.txt file or visit        *}
+{* http://gnu.org                                                          *}
+{***************************************************************************}
+{* $Id:: _header.tpl 1996 2008-11-10 11:30:08Z WanWizard                  $*}
+{*-------------------------------------------------------------------------*}
+{* Last modified by $Author:: WanWizard                                   $*}
+{* Revision number $Rev:: 1996                                            $*}
 {***************************************************************************}
 {*                                                                         *}
 {* This template generates the standard opening of a center panel          *}
