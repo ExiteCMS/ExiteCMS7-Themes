@@ -35,7 +35,7 @@ a img					{ border:none; }
 a.wiki_link:link,a.wiki_link:visited { color:#34329C; text-decoration:none; border-width:0px 0px 1px 0px; border-style:dotted; border-color:#34329C; }
 
 						/* horizontal lines */
-hr						{ border:none; color:#eee; background-color:#eee; height:1px; }
+hr						{ border:none; color:#ddd; background-color:#ddd; height:1px; }
 
 						/* dropdowns with options */
 optgroup				{ padding-bottom:5px; font-style:normal; }
@@ -63,7 +63,7 @@ body					{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; fon
 
 						/* column definitions (left, center, right) */
 .side-border-left		{ padding:5px; margin-right: 10px; background-color:rgb(255,253,215); }
-.main-bg				{ background-color:#fff; padding:5px; }
+.main-bg				{ background-color:#fff; padding:0px 0px 0px 0px; }
 .side-border-right		{ padding:5px; }
 
 						/* panels in the center column */
@@ -79,7 +79,7 @@ body					{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; fon
 .smallalt				{ font-weight:normal; font-size:90%; color:#555; }
 
 						/* title bars within a panel */
-.infobar 				{ font-weight:normal; color:#333; background-color:rgb(255,253,215); padding:3px 4px 3px 4px; }
+.infobar 				{ font-weight:normal; color:#333; padding:3px 0px 3px 0px; }
 
 /* --- Browser window centered div ------------------------- */
 
@@ -94,7 +94,7 @@ body					{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; fon
 .headermenu				{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; font-size:1.2em; font-weight:bold; color:#888; padding:4px 4px 4px 4px; border-top:1px #e1e1e1 solid;}
 
 						/* header menu links */
-.headermenuitem			{ font-weight:normal; color:#fff; }
+.headermenuitem			{ font-weight:normal; color:#888; }
 
 /* --- Panels ---------------------------------------------- */
 
@@ -105,10 +105,10 @@ body					{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; fon
 .side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 5px 0px; }
 
 						/* center panel title */
-.cap-main				{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; font-size:1.4em; font-weight:bold; color:#888; padding:2px 4px 4px 4px; }
+.cap-main				{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; font-size:1.4em; font-weight:bold; color:#888; padding:2px 4px 4px 4px; border-bottom:1px solid #ddd; }
 
 						/* side panel title */
-.sub-cap-main			{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; font-size:1.4em; font-weight:bold; color:#888; padding:4px 4px 4px 4px; }
+.sub-cap-main			{ font-family:"Times New Roman",Verdana,Arial,Helvetica,sans-serif; font-size:1.3em; font-weight:bold; color:#888; padding:4px 4px 4px 4px; }
 
 						/* labels and separators in side panels */
 .side-label				{ font-weight:bold; padding:5px 2px 5px 2px; }
