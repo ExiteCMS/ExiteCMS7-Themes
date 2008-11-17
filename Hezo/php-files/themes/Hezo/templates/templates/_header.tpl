@@ -160,7 +160,7 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 												<font size='6'><b>{$settings.sitename}</b></font>
 											</td>
 											<td align='right'>
-											{if 1 || $settings.maintenance}
+											{if $settings.maintenance}
 												<font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE&nbsp;</b></font>
 											{/if}
 											</td>

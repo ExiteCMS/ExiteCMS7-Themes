@@ -78,7 +78,7 @@ body					{ margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, Trebuche
 .smallalt				{ font-weight:normal; font-size:90%; color:#555; }
 
 						/* title bars within a panel */
-.infobar 				{ font-weight:bold; font-size:110%; color:#111; padding:3px 4px 3px 4px; }
+.infobar 				{ font-weight:bold; font-size:100%; color:#111; padding:3px 4px 3px 4px; }
 
 /* --- Browser window centered div ------------------------- */
 
@@ -94,7 +94,7 @@ body					{ margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, Trebuche
 .headermenu				{ font-weight:normal; color:#666; background-color:#ededed; padding:0px 2px 0px 2px; }
 
 						/* header menu links */
-.headermenuitem			{ font-weight:normal; color:#fff; }
+.headermenuitem			{ font-weight:normal; color:#666; }
 
 /* --- Panels ---------------------------------------------- */
 
@@ -108,7 +108,7 @@ body					{ margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, Trebuche
 .cap-main				{ font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1.2em; letter-spacing: .1em; font-weight: bold; color: #FFFFFF; padding: 0px 0px 0px 5px; margin: 0; background-color: transparent; white-space: nowrap; }
 
 						/* side panel title */
-.sub-cap-main			{ font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 1em; letter-spacing: .1em; font-weight: bold; color: #FFFFFF; padding: 0px 0px 0px 5px; margin-top: 0; background-color: transparent; white-space: nowrap; }
+.sub-cap-main			{ font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif; font-size: 85%; letter-spacing: .1em; font-weight: bold; color: #FFFFFF; padding: 0px 0px 0px 5px; margin-top: 0; background-color: transparent; white-space: nowrap; }
 
 						/* labels and separators in side panels */
 .side-label				{ font-weight:bold; padding:2px 2px 3px 2px; }
