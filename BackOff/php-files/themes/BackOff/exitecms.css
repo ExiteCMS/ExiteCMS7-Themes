@@ -97,7 +97,7 @@ body					{ background-color:#828282; font-size:1em; font-family:Tahoma,"Bitstrea
 .headermenu				{ background: #fff; font-family:Tahoma; font-size:1em; color: #7a7a7a; height:19px; padding:4px 4px 4px 4px; }
 
 						/* header menu links */
-.headermenuitem			{ font-weight:normal; color:#fff; }
+.headermenuitem			{ font-weight:normal; color:#7a7a7a; }
 
 /* --- Panels ---------------------------------------------- */
 
