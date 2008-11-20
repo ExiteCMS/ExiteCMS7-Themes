@@ -19,7 +19,7 @@
 {* preprocessing section of your theme.php                                 *}
 {*                                                                         *}
 {***************************************************************************}
-<table align='center' cellpadding='2' cellspacing='0' width='{$smarty.const.THEME_WIDTH}' class='footer' style='background-image:url({$smarty.const.THEME}images/footer.gif);background-repeat:no-repeat;'>
+<table align='center' cellpadding='2' cellspacing='0' width='{$smarty.const.THEME_WIDTH}' class='footer'>
 	<tr>
 		<td>
 			<table cellspacing='0' cellpadding='2' width='100%' border='0'>
