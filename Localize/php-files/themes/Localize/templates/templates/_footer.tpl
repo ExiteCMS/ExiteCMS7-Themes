@@ -19,30 +19,38 @@
 {* preprocessing section of your theme.php                                 *}
 {*                                                                         *}
 {***************************************************************************}
-<table align='center' cellpadding='0' cellspacing='0' width='{$smarty.const.THEME_WIDTH}'>
+<table align='center' cellpadding='2' cellspacing='0' width='{$smarty.const.THEME_WIDTH}' class='footer'>
 	<tr>
-		<td class='footer'>
-			<table align='center' cellpadding='0' cellspacing='0' width='100%'>
+		<td>
+			<table align='center' cellspacing='0' cellpadding='2' width='100%' border='0'>
 				<tr>
-					<td>
+					<td height='28' width='35%' align='left'>
+						<div align='left'>
+							Localize Theme Design: <a target='_blank' href='http://www.oswd.org/design/preview/id/2063'>ad_267</a>, Adapted by WanWizard
+						</div>
+					</td>
+					<td height='28' width='30%'align='center'>
 						v.{$settings.version} <a href='http://www.exitecms.org' target='_blank' title='ExiteCMS v7.2 ©2008 Exite BV'><img src='{$smarty.const.IMAGES}cms-logo-small.png' alt='' /></a> rev.{$settings.revision}<br />
+						{$settings.footer}
+					</td>
+					<td height='28' width='35%' align='right'>
 						{$settings.counter} {if $settings.counter == 1}{$locale.140}{else}{$locale.141}{/if}
 					</td>
 				</tr>
 				<tr>
-					<td>
+					<td colspan='3' align='center'>
 						<br />
 						The webserver needed {$_loadstats.time|string_format:"%01.3f"} sec. to process this page. Of that, the MySQL v{$MySQLinfo} engine needed {$_loadstats.querytime|string_format:"%01.3f"} sec.
 					</td>
 				</tr>
 				<tr>
-					<td>
+					<td colspan='3' align='center'>
 						Total number of queries: {$_loadstats.queries}&nbsp;&nbsp;(Selects: {$_loadstats.selects}&nbsp;&nbsp;Inserts: {$_loadstats.inserts}&nbsp;&nbsp;Deletes: {$_loadstats.deletes}&nbsp;&nbsp;Updates: {$_loadstats.updates}&nbsp;&nbsp;Others: {$_loadstats.others})
 					</td>
 				</tr>
 				{if $_loadstats.compression}
 				<tr>
-					<td>
+					<td colspan='3' align='center'>
 						zlib compression is enabled for this website
 					</td>
 				</tr>

@@ -19,12 +19,12 @@
 /* --- General settings ------------------------------------ */
 
 						/* text anchors */
-a						{ color:#333333; text-decoration:none; }
-a:hover					{ color:#333333; text-decoration:underline; }
+a						{ color:#8CD749; text-decoration:underline; }
+a:hover					{ color:#3B4471; text-decoration:none; }
 
 						/* text anchors in side panels */
-a.side					{ color:#333333; text-decoration:none; }
-a:hover.side			{ color:#333333; text-decoration:underline; }
+a.side					{ color:#8CD749; text-decoration:underline; }
+a:hover.side			{ color:#3B4471; text-decoration:none; }
 
 						/* image anchors */
 a img					{ border:none; }
@@ -33,7 +33,7 @@ a img					{ border:none; }
 a.wiki_link:link,a.wiki_link:visited { color:#34329C; text-decoration:none; border-width:0px 0px 1px 0px; border-style:dotted; border-color:#34329C; }
 
 						/* horizontal lines */
-hr						{ border:none; color:#bbb; background-color:#bbb; height:1px; }
+hr						{ border:none; color:#DADADA; background-color:#DADADA; height:1px; }
 
 						/* dropdowns with options */
 optgroup				{ padding-bottom:5px; font-style:normal; }
@@ -44,7 +44,7 @@ optgroup				{ padding-bottom:5px; font-style:normal; }
 form					{ margin:0px; }
 
 						/* buttons */
-.button					{ font-size:0.8em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; font-weight:normal; width:auto; overflow:visible; font-weight: bold; color:#ffffff; background-color:#666; border-top:1px #bbb solid; border-left:1px #bbb solid; border-bottom:1px #000 solid; border-right:1px #000 solid; cursor:pointer; margin:2px 0px 2px 0px; padding:0px; }
+.button					{ font-size:0.8em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; font-weight:normal; width:auto; overflow:visible; font-weight: bold; color:#fff; background-color:#444; border-top:1px #bbb solid; border-left:1px #bbb solid; border-bottom:1px #000 solid; border-right:1px #000 solid; cursor:pointer; margin:2px 0px 2px 0px; padding:0px; }
 .button:hover			{ color:#666; background-color:#ddd; border-top:1px #999 solid; border-left:1px #999 solid; border-bottom:1px #fff solid; border-right:1px #fff solid; }
 
 						/* text entry fields */
@@ -53,23 +53,23 @@ form					{ margin:0px; }
 /* --- Website template ------------------------------------ */
 
 						/* page body */
-body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; margin:4px 10px 5px 10px; width:100%; }
-.body 					{ color:#444; background-color:#aaa; }
+body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; margin:0px; }
+.body 					{ color:#000; background-color:#ddd; }
 
 						/* content body, can be different from the body when centered */
 .content				{ }
 
 						/* column definitions (left, center, right) */
-.side-border-left		{ text-align:left; padding:0px 5px 0px 0px; }
-.main-bg				{ color:#444; padding:0px 0px 5px 0px; }
-.side-border-right		{ text-align:left; padding:0px 0px 0px 5px; }
+.side-border-left		{ text-align:left; background-color:#fff; padding:0px 10px 0px 10px; }
+.main-bg				{ color:#444; background-color:#fff; padding:0px 0px 5px 0px; }
+.side-border-right		{ text-align:left; background-color:#fff; padding:0px 10px 0px 10px; }
 
 						/* panels in the center column */
-.main-body 				{ text-align:left; color:#444; background-color:#fff; padding:4px 4px 6px 4px; margin:0px; }
+.main-body 				{ text-align:left; color:#444; background-color:#fff; padding:4px 20px 5px 20px; margin:0px; }
 
 						/* panels in the left & right columns (with and without padding, p.e. for images) */
-.side-body				{ color:#000; background-color:#fff; padding:4px 4px 6px 4px; }
-.side-body-nm			{ color:#000; background-color:#fff; }
+.side-body				{ color:#444; background-color:#fff; padding:4px; }
+.side-body-nm			{ color:#444; background-color:#fff; }
 
 						/* tags for sub texts, captions, etc. */ 
 .small					{ font-weight:normal; font-size:90%; color:#444; }
@@ -77,7 +77,7 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 .smallalt				{ font-weight:normal; font-size:90%; color:#888; }
 
 						/* title bars within a panel */
-.infobar 				{ font-weight:normal; color:#333; background-color:#ddd; padding:3px 4px 3px 4px; }
+.infobar 				{ font-weight:normal; color:#444; background-color:#fff; padding:3px 4px 3px 4px; }
 
 /* --- Browser window centered div ------------------------- */
 
@@ -87,10 +87,18 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 /* --- Header ---------------------------------------------- */
 
 						/* header definition and background image */
-.headerbanner			{ color:#333; background-color:#eee; background-image:url(/themes/ExiteCMS/images/exitecms_bg.gif); padding:0px; }
+.headerbanner			{ color:#000; background-color:#fff; padding:0px; }
 
+.white-header {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #fff;
+	background-color : #999999;
+	padding: 15px 10px 16px 10px;
+	text-align: center;
+}
 						/* header menu bar */
-.headermenu				{ font-weight:normal; color:#ffffff; background-color:#666666; padding:0px 2px 0px 2px; }
+.headermenu				{ font-weight:normal; color:#fff; background-color:#999999; padding:15px 10px 16px 10px; }
 
 						/* header menu links */
 .headermenuitem			{ font-weight:normal; color:#fff; }
@@ -104,10 +112,10 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 .side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 5px 0px; border:1px #ddd solid; }
 
 						/* center panel title */
-.cap-main				{ font-weight:normal; text-align:left; color:#ffffff; background-color: #666666; font-size:1.2em; padding:3px 2px 3px 2px; }
+.cap-main				{ font-weight:normal; font-style:italic; text-align:left; color:#3B4471; background-color: #dddddd; font-size:1em; padding:0px 0px 0px 20px; }
 
 						/* side panel title */
-.sub-cap-main			{ font-weight:normal; color:#ffffff; background-color:#666666; padding:0px 2px 0px 2px; }
+.sub-cap-main			{ font-weight:normal; font-style:italic; text-align:center; color:#3B4471; background-color:#dddddd; padding:0px 0px 0px 0px; }
 
 						/* labels and separators in side panels */
 .side-label				{ color:#333; background-color:#ddd; margin:2px 0px 2px 0px; padding:1px 0px 1px 8px; white-space:nowrap;overflow:hidden; }
@@ -126,13 +134,13 @@ hr.side-hr				{ height:2px; }
 
 /* --- Footer ---------------------------------------------- */
 
-.footer					{ text-align:center; color: #555; line-height:125%; }
+.footer					{ text-align:center; color: #666; background-color:#fff; line-height:125%; }
 .footer img 			{ border: 0px; vertical-align: -30%; }
 
 /* --- Panel content layouts-------------------------------- */
 
 						/* standard table borders */
-.tbl-border				{ background-color:#ddd; color:#ddd; }
+.tbl-border				{ background-color:#ddd; color:#444; }
 
 						/* borderless tables */
 .tbl					{ padding:4px; color:#444; background-color:#fff; }
@@ -162,7 +170,7 @@ hr.side-hr				{ height:2px; }
 .tbl_right		 		{ color:#333; background-color:#fff; padding:4px; border: 1px solid #bbbbbb; }
 
 						/* message body, unread message */
-.unread					{ color:#000; background-color:#eee; padding:4px; border: 1px solid #bbbbbb; }
+.unread					{ background-color:#E3FCC1; padding:4px; border: 1px solid #bbbbbb; }
 
 						/* links in the message body */
 .tbl_right a			{ text-decoration:underline; }

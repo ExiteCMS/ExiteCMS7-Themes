@@ -43,16 +43,6 @@ input.highlight {
 	height: 100%;
 }
 
-.page a {
-	color: #34329C;
-	text-decoration: none;
-}
-
-.page a:hover {
-	color: #34329C;
-	text-decoration: underline;
-}
-
 .pagefooter {
 	clear: both;
 	padding: 5px 10px;
@@ -471,14 +461,6 @@ blockquote {
 form, h1, h2, h3, h4, h5 {
 	margin: 0px;
 	padding: 0px;
-}
-
-a.ext {
-	color: #34329C;
-}
-
-a.ext:hover {
-	color: #34329C;
 }
 
 .exttail {

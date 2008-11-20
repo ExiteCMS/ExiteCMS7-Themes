@@ -153,22 +153,15 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 					<td class='headerbanner'>
 						<table cellpadding='0' cellspacing='0' width='100%'>
 							<tr  align='center'>
-								<td >
-									<table border='0' width='100%'>
-										<tr style='height:55px'>
-											<td align='right'>
-												{* room for other text *}
-											</td>
-										</tr>
-										<tr style='height:55px'>
-											<td align='right'>
-											{if $settings.maintenance}
-												<br />
-												<font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE&nbsp;</b></font>
-											{/if}
-											</td>
-										</tr>
-									</table>
+								<td style='padding:0; margin:0; font-weight:normal; font-style:italic; color:#8CD749; font-family:"Trebuchet MS", verdana, arial, sans-serif;'>
+									<font size='6''><b>{$settings.sitename}</b></font>
+									{if 1 || $settings.maintenance}
+										<br />
+										<font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE MODE</b></font>
+									{/if}
+								</td>
+								<td align='right' style='padding:0; margin:0; font-size:200%; font-weight:normal; font-style:italic; color:#8CD749; font-family:"Trebuchet MS", verdana, arial, sans-serif;'>
+									<img src='{$smarty.const.THEME}images/leaf.jpg' alt='leaf.jpg' height='220' width='293'>
 								</td>
 							</tr>
 						</table>
@@ -193,7 +186,7 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 							{if $smarty.section.index.first} &nbsp;{else} &middot;{/if} <a href='{$headermenu[index].link_url}' {if $headermenu[index].link_window == 1}target='_blank' {/if}><span class='headermenuitem'>{$headermenu[index].link_name}</span></a>
 						{/section}
 					</td>
-					<td align='right' class='sub-cap-main'>
+					<td align='right' class='headermenu'>
 						{$smarty.now|date_format:"subheaderdate"}&nbsp;
 					</td>
 				</tr>
