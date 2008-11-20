@@ -24,7 +24,7 @@
 {***************************************************************************}
 <table cellpadding='0' cellspacing='0' width='100%' class='side-panel'>
 	<tr>
-		<td style='padding:5px;'>
+		<td style=''>
 			<table cellpadding='0' cellspacing='0' width='100%'>
 				<tr>
 					<td class='sub-cap-main'>

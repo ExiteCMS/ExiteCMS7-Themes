@@ -155,46 +155,45 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 							<tr  align='center'>
 								<td >
 									<table border='0' width='100%'>
-										<tr style='height:55px'>
-											<td align='right'>
-												{* room for other text *}
+										<tr style='font-size:1.4em;font-weight:bold;'>
+											<td colspan='2' align='right'>
+												{$smarty.now|date_format:"subheaderdate"}&nbsp;
 											</td>
 										</tr>
-										<tr style='height:55px'>
+										<tr>
+											<td align='left'>
+												<font size='6'><b>{$settings.sitename}</b></font>
+											</td>
 											<td align='right'>
 											{if $settings.maintenance}
-												<br />
-												<font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE&nbsp;</b></font>
+												<font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE</b></font>
 											{/if}
+											</td>
+										</tr>
+										<tr>
+											<td align='left'>
+												<a href='.' onclick='fontGroter(-0.1); return false' title='Decrease font-size'><img src='{$smarty.const.THEME}images/minus.gif' alt='' border='0' /></a><a href='.' onclick='fontReset(0.7); return false' title='Restore default font-sizes'><img src='{$smarty.const.THEME}images/reset.gif' hspace='2' alt='' border='0' /></a><a href='.' onclick='fontGroter(0.1); return false' title='Increase font-size'><img src='{$smarty.const.THEME}images/plus.gif' alt='' border='0' /></a>
+												<div id='new_posts_header' style='display:inline;'>
+													{if $new_posts}
+														<a href='{$smarty.const.BASEDIR}modules/forum_threads_list_panel/new_posts.php'><img src='{$smarty.const.THEME}images/newposts.gif' height='9' alt='{$locale.028}' /></a>
+													{/if}
+												</div>
+											</td>
+											<td align='right' class='headermenu'>
+												<div id='new_pm_header' style='display:inline;'>
+													{if $new_pm}
+														<a href='{$smarty.const.BASEDIR}pm.php?action=show_new'><img src='{$smarty.const.THEME}images/newmsgs.gif' height='9' alt='' /></a>&nbsp;
+													{/if}
+												</div>
+												{section name=index loop=$headermenu}
+													{if $smarty.section.index.first} &nbsp;{else} &middot;{/if} <a href='{$headermenu[index].link_url}' {if $headermenu[index].link_window == 1}target='_blank' {/if}><span class='headermenuitem'>{$headermenu[index].link_name}</span></a>
+												{/section}
 											</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 						</table>
-					</td>
-				</tr>
-			</table>
-			<table cellpadding='0' cellspacing='0' width='100%'>
-				<tr>
-					<td class='headermenu'>
-						<a href='.' onclick='fontGroter(-0.1); return false' title='Decrease font-size'><img src='{$smarty.const.THEME}images/minus.gif' alt='' border='0' /></a><a href='.' onclick='fontReset(0.7); return false' title='Restore default font-sizes'><img src='{$smarty.const.THEME}images/reset.gif' hspace='2' alt='' border='0' /></a><a href='.' onclick='fontGroter(0.1); return false' title='Increase font-size'><img src='{$smarty.const.THEME}images/plus.gif' alt='' border='0' /></a>
-						<div id='new_posts_header' style='display:inline;'>
-							{if $new_posts}
-								<a href='{$smarty.const.BASEDIR}modules/forum_threads_list_panel/new_posts.php'><img src='{$smarty.const.THEME}images/newposts.gif' height='9' alt='{$locale.028}' /></a>
-							{/if}
-						</div>
-						<div id='new_pm_header' style='display:inline;'>
-							{if $new_pm}
-								<a href='{$smarty.const.BASEDIR}pm.php?action=show_new'><img src='{$smarty.const.THEME}images/newmsgs.gif' height='9' alt='' /></a>&nbsp;
-							{/if}
-						</div>
-						{section name=index loop=$headermenu}
-							{if $smarty.section.index.first} &nbsp;{else} &middot;{/if} <a href='{$headermenu[index].link_url}' {if $headermenu[index].link_window == 1}target='_blank' {/if}><span class='headermenuitem'>{$headermenu[index].link_name}</span></a>
-						{/section}
-					</td>
-					<td align='right' class='sub-cap-main'>
-						{$smarty.now|date_format:"subheaderdate"}&nbsp;
 					</td>
 				</tr>
 			</table>

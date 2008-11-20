@@ -43,16 +43,6 @@ input.highlight {
 	height: 100%;
 }
 
-.page a {
-	color: #34329C;
-	text-decoration: none;
-}
-
-.page a:hover {
-	color: #34329C;
-	text-decoration: underline;
-}
-
 .pagefooter {
 	clear: both;
 	padding: 5px 10px;
