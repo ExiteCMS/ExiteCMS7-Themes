@@ -1,0 +1,282 @@
+
+/* ========================================================= */
+/* ExiteCMS standard CSS tags. Do NOT remove these!          */
+/* ========================================================= */
+
+/* --- General settings ------------------------------------ */
+
+						/* text anchors */
+a						{ color:#003300; text-decoration:none; }
+a:hover					{ color:#003300; text-decoration:underline; }
+
+						/* text anchors in side panels */
+a.side					{ color:#99CCCC; text-decoration:none; }
+a:hover.side			{ color:#99CCCC; text-decoration:underline; }
+
+						/* wiki links */
+a:link.wiki_link, a:visited.wiki_link { color:#000; text-decoration:none; border-width:0px 0px 2px 0px; border-style:dotted; border-color:#ff0000; }
+
+						/* image anchors */
+a img					{ border:none; }
+
+						/* horizontal lines */
+hr						{ border:none; color:#CC0000; background-color:#CC0000; height:1px; }
+
+/* --- HTML form settings ---------------------------------- */
+
+						/* general form definition */
+form					{ margin:0px; }
+
+						/* buttons */
+.button					{ font-size:90%; font-weight:normal; width:1; overflow:visible; color:#fff; background-color:#CC0000; border-top:1px #ddd solid; border-left:1px #ddd solid; border-bottom:1px #666 solid; border-right:1px #666 solid; cursor:pointer; margin-top:2px; padding: 1px 2px;}
+
+						/* text entry fields */
+.textbox				{ font-size:95%; color:#003300; background-color:#fff; border:1px #666 solid; }
+
+/* --- Website template ------------------------------------ */
+
+						/* page body (normal mode & maintenance mode */
+body					{ font-size:1em; font-family:Verdana, "Deja Vu Sans", Arial, Sans-Serif; }
+.body 					{ margin: 5px 5px 5px 5px; color:#fff; background-color:#58a7e3; }
+
+						/* content body, can be different from the body when centered */
+.content				{ }
+
+						/* column definitions (left, center, right) */
+.side-border-left		{ text-align:left; padding:0px 5px 0px 0px; }
+.main-bg				{ padding:0px 0px 0px 0px; }
+.side-border-right		{ text-align:left; padding:0px 0px 0px 5px; }
+
+						/* panels in the center column */
+.main-body 				{ text-align:left; color:#003300; background-color:#fff; padding:4px; }
+
+						/* panels in the left & right columns (with and without padding, p.e. for images) */
+.side-body				{ color:#99CCCC; background-color:#003300; padding:4px 4px 6px 4px; }
+.side-body-nm			{ color:#99CCCC; background-color:#003300; }
+
+						/* tags for sub texts, captions, etc. */ 
+.small					{ font-size:90%; font-weight:normal; color:#EF7E68; }
+.small2					{ font-size:90%; font-weight:normal; color:#003300; }
+.smallalt				{ font-size:90%; color:#003300; }
+
+						/* title bars within a panel */
+.infobar 				{ color:#cc0000; background-color:#fff; padding:3px 4px 3px 4px; }
+
+/* --- Browser window centered div ------------------------- */
+
+.splashscreen-h			{ font-size:0.8em; width:800px; position: absolute; top: 50%; left: 0px; width: 100%; margin-top: -150px; text-align: center; min-width: 900px; }
+.splashscreen-v			{ color:#000; background-color:#eee; border:1px solid #666; position: relative; text-align: left; width: 500px; height: 300px; margin: 0px auto; }
+
+/* --- Header ---------------------------------------------- */
+
+						/* header definition and background image */
+.headerbanner			{ margin-top:5px; }
+
+.sub-header				{ font-weight:bold; height:20px; padding:2px; padding-left:5px; color:#fff; }
+
+/* --- Panels ---------------------------------------------- */
+
+						/* center panel cell definitions */
+.main-panel				{ margin: 0px 0px 0px 0px; }
+
+						/* side panel cell definitions */
+.side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 10px 0px; border:1px #ddd solid; }
+
+						/* center panel title */
+.cap-main				{ font-weight:bold; color:#fff; background-color:#CC0000; height:21px; padding:0px 2px 0px 2px; }
+
+						/* side panel title */
+.sub-cap-main			{ font-weight:bold; color:#fff; background-color:#003300; padding:2px 5px 10px 5px; }
+
+						/* labels and separators in side panels */
+.side-label				{ color:#003300; background-color:#99CCCC; margin:2px 0px 2px 0px; padding:1px 0px 1px 8px; white-space:nowrap;overflow:hidden; }
+
+						/* labels and separators in body panels */
+.main-label				{ color:#cc0000; background-color:#fff; font-weight:bold; padding:4px 4px 4px 4px; margin:0px 0px 5px 0px; white-space:nowrap;overflow:hidden; }
+
+						/* links in side panels */
+.side-label-link		{ white-space:nowrap;overflow:hidden;}
+
+						/* positioning of side-panel open/close buttons */
+.side-label-button		{ position:relative; float:right; top:2px; right:2px; }
+
+						/* horizontal lines in side-panels */
+hr.side-hr				{ border:1px #ccc solid; border-bottom:1px #eee solid; }
+
+/* --- Footer ---------------------------------------------- */
+
+.footer					{ text-align:center; color:line-height:125%; }
+.footer img 			{ border: 0px; vertical-align: -30%; }
+
+/* --- Panel content layouts-------------------------------- */
+
+						/* standard table borders */
+.tbl-border				{ background-color:#9BBF9B; }
+
+						/* borderless tables */
+.tbl					{ padding:3px 4px 3px 4px; }
+
+						/* table cells - color 1 */
+.tbl1					{ color:#003300; background-color:#fff; padding:4px; }
+
+						/* table cells - color 2 */
+.tbl2					{ color:#003300; background-color:#fff; padding:4px; }
+
+						/* user-info cell header */
+.tbl_top_left			{ color:#003300; font-weight: bold; background-color:#fff; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
+
+						/* user-info cell of a message */
+.tbl_left				{ color:#003300; background-color:#fff; padding:4px; border-left: 1px solid #bbbbbb; border-top: 1px solid #bbbbbb; }
+
+						/* button row at the bottom the user-info cell */
+.tbl_left_bottom		{ background-color:#fbf9f9; padding:4px; border-left: 1px solid #bbbbbb; border-bottom: 1px solid #bbbbbb; }
+
+						/* message subject  */
+.tbl_top_mid			{ font-weight: bold; color:#333333; background-color:#fff; padding:4px; border-top: 1px solid #bbbbbb; }
+
+						/* button row in the message header */
+.tbl_top_right			{ color:#333333; background-color:#fff; padding:4px; border-top: 1px solid #bbbbbb; border-right: 1px solid #bbbbbb; }
+
+						/* message body */
+.tbl_right		 		{ color:#333; background-color:#fff; padding:4px; border: 1px solid #bbbbbb; }
+
+						/* message body, unread message */
+.unread					{ color:#000000; background-color:#CCFFFF; padding:4px; border: 1px solid #bbbbbb; }
+
+						/* links in the message body */
+.tbl_right		 		{ background-color:#fff; padding:4px; border: 1px solid #bbbbbb; }
+
+						/* quotes within the message body */
+.quote					{ color:#000; background-color:#fff; padding:2px; margin:5px 20px 5px 20px; border:1px #bbbbbb solid; }
+
+						/* code sections within the message body (note: total number of px for padding+margin must remain the same, the code expects this!!!) */
+.codeblock_source		{ width:250px; margin-left:10px; border:1px #bbb solid; background-color:#fff; padding:0px; white-space:nowrap; overflow-x:auto; }
+.codeblock_cmds			{ width:240px; margin-left:10px; border:1px #bbb solid; background-color:#fff; padding:0px 5px 0px 5px; border-top:0px; text-align:right; }
+
+						/* thumbnail caption in the message body */
+.thumbnail				{ color:#ddd;background-color:#333;text-align:center; }
+a.thumbnail				{ color: #ddd; }
+
+						/* image display in the album module */
+.album_thumb			{ border-style:outset; border-color:#999; border-width:5px; }
+
+						/* error messages and special notices */
+.errors 				{ text-align:center; font-weight:bold; font-size:110%; color:red; }
+
+						/* horizontal pollbar definition */
+.poll 					{ height:12px; border:1px #99CCCC solid; }
+
+/* --- SWF upload module ----------------------------------- */
+
+						/* IE6 fixes */
+html fieldset 			{ position: relative; margin-top:1em; }
+html legend 			{ position:absolute; top: -0.5em; left: .5em; }
+
+						/* upload progress block, border and title */
+.swf_uploadprogress		{ border:1px solid #ccc; margin:0px; padding:25px 10px; }
+.swf_legend 			{ font-size:120%; font-weight:bold; padding:0 5px; margin:0 10px; color:#333; }
+
+						/* div to contain the SWFupload flash module */
+.progressWrapper 		{ width:100%; overflow:hidden; }
+
+.progressContainer 		{ margin:2px; padding:5px; border:solid 1px #444; background-color:#eee; overflow:hidden; }
+.progressContainer_red	{ border:solid 2px red; }
+.progressContainer_green { border:solid 1px #444; }
+.progressContainer_blue	{ border:solid 2px green; }
+.progressName			{ font-weight:bold; color:#666; width:100%; text-align:left; white-space:nowrap; overflow:hidden; }
+.progressBarInProgress	{ font-size:0; width:0%; height: 4px; background-color: blue; margin-top: 2px; }
+.progressBarComplete	{ width:100%; background-color: green; visibility: hidden; }
+.progressBarError		{ width:100%; background-color: red; visibility: hidden; }
+.progressBarStatus		{ margin-top: 2px; width: 100%; font-size: 90%; text-align: left; white-space: nowrap; }
+a.progressCancel 		{ font-size:0; height:16px; width:16px; background-image: url(/themes/ExiteCMS/images/cancel.gif); background-repeat:no-repeat; background-position:0px 0px; float:right; }
+
+/* --- Mootools Lightbox, by Milkbox -------------------------------- */
+
+						/* set the Milkbox overlay color // opacity: see the js options */
+#mbOverlay 				{ position:absolute; left:0; width:100%; background-color:#000; z-index:100; cursor:pointer; }
+
+						/* default Lightbox definition, can be overriden at runtime for proper positioning */
+#mbCenter 				{ position:absolute; z-index:101; overflow:hidden; left:50%; top:10%; background-color:#fff; border:5px solid #fff; margin:0; padding:5px; }
+
+						/* image loading notice */
+.mbLoading				{ background:#fff url(/themes/ExiteCMS/images/ajax-loader.gif) no-repeat center; }
+
+						/* Lightbox image settings */
+#mbImage				{ margin:0; padding:0; height:0; border:none; font-size:0; overflow:hidden; }
+
+						/* div clearing class */
+.clear					{ clear:both; height:0; margin:0; padding:0; font-size:0; overflow:hidden; }
+
+						/* image caption and navigation block, under the image */
+#mbBottom 				{ font-size:1em; color:#666; line-height:1.4em; text-align:left; padding-top:8px; margin:0; }
+
+						/* image caption */
+#mbDescription			{ margin-right:27px; padding:0px 10px 0 0; font-weight: normal; text-align:left; }
+
+						/* Lightbox navigation. Be careful if you change buttons dimensions! */
+#mbNavigation			{ float:right; width:27px; padding-top:3px; border-left:1px solid #9c9c9c; }
+
+						/* Lightbox images counter */
+#mbCount				{ width:55px; overflow:hidden; padding-top:1px; float:right; text-align:right; font-size:9px; }
+
+						/* navigation links */
+#mbCloseLink, #mbPrevLink, #mbNextLink { outline:none; display:block; float:right; height:20px; cursor:pointer; }
+#mbPrevLink, #mbNextLink{ width:17px; }
+#mbPrevLink				{ background:transparent url(/themes/ExiteCMS/images/lb_previous.gif) no-repeat; }
+#mbNextLink				{ background:transparent url(/themes/ExiteCMS/images/lb_next.gif) no-repeat; }
+
+						/* NOTE: doesn't work in ie6, so, just see the js options :) */
+a#mbPrevLink:hover,a#mbNextLink:hover,a#mbCloseLink:hover { background-position: 0 -23px; }
+
+#mbCloseLink 			{ width:20px; background: transparent url(/themes/ExiteCMS/images/lb_close.gif) no-repeat; }
+
+/* --- Upgrade admin module -------------------------------- */
+
+						/* revision title */
+.rev_title				{ color:#333; font-weight:bold; }
+						/* revision title for major revisions */
+.rev_major				{ color:red; font-weight:bold; }
+
+						/* revision description text */
+.rev_desc				{ }
+
+/* --- TinyMCE overrides ----------------------------------- */
+
+body.mceContentBody 	{ background-color:#eee; }
+
+/* ========================================================= */
+/* Add your own custom CSS tags below this line!             */
+/* ========================================================= */
+
+/* --- Panel extra elements -------------------------------- */
+
+.border-tleft			{ width:5px; height:16px; background-image:url(/themes/PLiXmas/images/border-tleft.gif); }
+.border-tright			{ width:5px; height:16px; background-image:url(/themes/PLiXmas/images/border-tright.gif); }
+.border-tmain 			{ height:16px; background-image:url(/themes/PLiXmas/images/border-tmain.gif); background-repeat:repeat-x; }
+
+.sub-cap-left			{ width:5px; height:21px; background-image:url(/themes/PLiXmas/images/sub-cap-left.gif); }
+.sub-cap-right			{ width:5px; height:21px; background-image:url(/themes/PLiXmas/images/sub-cap-right.gif); }
+
+.cap-left				{ width:5px; height:21px; background-image:url(/themes/PLiXmas/images/cap-left.gif); }
+.cap-right				{ width:5px; height:21px; background-image:url(/themes/PLiXmas/images/cap-right.gif); }
+
+.border-left			{ width:5px; background-image:url(/themes/PLiXmas/images/border-left.gif); background-repeat:repeat-y; }
+.border-right			{ width:5px; background-image:url(/themes/PLiXmas/images/border-right.gif); background-repeat:repeat-y; }
+
+.border-bleft			{ width:5px; height:16px; background-image:url(/themes/PLiXmas/images/border-bleft.gif); }
+.border-bright			{ width:5px; height:16px; background-image:url(/themes/PLiXmas/images/border-bright.gif); }
+.border-bmain			{ height:16px; background-image:url(/themes/PLiXmas/images/border-bmain.gif); background-repeat:repeat-x; }
+
+.tbl_right a			{ text-decoration:underline; }
+
+/* --- Google Maps ----------------------------------------- */
+
+#tooltip 				{ width: 200px; z-index: 99999;	}
+.tooltip 				{ font-weight:bold;padding: 2px;border:1px #036 solid;border-width:1px 2px 2px 1px;border-color: #000 #666 #666 #000;background-color:#FF9;color: #000;}
+
+/* --- Donations -------------------------------------------- */
+
+.donate_title			{ font-weight:bold;color:#004a80; }
+.donate_box				{ width:24em; height:24em; margin:1px; padding:0.5em; border:1px solid #CCC; -moz-border-radius:10px; background:#9d9ab7; }
+
+/* ========================================================= */
