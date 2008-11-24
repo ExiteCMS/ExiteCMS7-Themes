@@ -145,32 +145,32 @@ msgtimerid = setTimeout("checkMessages()", 15000);
 /* ]]> */
 </script>
 <table align='center' width='{$smarty.const.THEME_WIDTH}' cellspacing='0' cellpadding='0' class='headerbanner'>
-	<tr style='height:160px;'>
-		<td style='background-image: url({$smarty.const.THEME}images/top.gif); background-repeat: none;'>
-			<div>
-				<div style='display:inline;float:left;margin-top:135px;margin-left:10px;width:100px;'>
-					<a href='.' onclick='fontGroter(-0.1); return false' title='Decrease font-size'><img src='{$smarty.const.THEME}images/minus.gif' alt='' border='0' /></a><a href='.' onclick='fontReset(0.7); return false' title='Restore default font-sizes'><img src='{$smarty.const.THEME}images/reset.gif' hspace='2' alt='' border='0' /></a><a href='.' onclick='fontGroter(0.1); return false' title='Increase font-size'><img src='{$smarty.const.THEME}images/plus.gif' alt='' border='0' /></a>
-					<div id='new_posts_header' style='display:inline;'>
-						{if $new_posts}
-							<a href='{$smarty.const.BASEDIR}modules/forum_threads_list_panel/new_posts.php'><img src='{$smarty.const.THEME}images/newposts.gif' height='9' alt='{$locale.028}' /></a>
-						{/if}
-					</div>
-					<div id='new_pm_header' style='display:inline;'>
-						{if $new_pm}
-							<a href='{$smarty.const.BASEDIR}pm.php?action=show_new'><img src='{$smarty.const.THEME}images/newmsgs.gif' height='9' alt='' /></a>&nbsp;
-						{/if}
-					</div>
+	<tr style='background-image: url({$smarty.const.THEME}images/top.gif); background-repeat: none;height:160px;'>
+		<td>
+			<div style='display:inline;float:left;margin-top:135px;margin-left:10px;width:100px;'>
+				<a href='.' onclick='fontGroter(-0.1); return false' title='Decrease font-size'><img src='{$smarty.const.THEME}images/minus.gif' alt='' border='0' /></a><a href='.' onclick='fontReset(0.7); return false' title='Restore default font-sizes'><img src='{$smarty.const.THEME}images/reset.gif' hspace='2' alt='' border='0' /></a><a href='.' onclick='fontGroter(0.1); return false' title='Increase font-size'><img src='{$smarty.const.THEME}images/plus.gif' alt='' border='0' /></a>
+				<div id='new_posts_header' style='display:inline;'>
+					{if $new_posts}
+						<a href='{$smarty.const.BASEDIR}modules/forum_threads_list_panel/new_posts.php'><img src='{$smarty.const.THEME}images/newposts.gif' height='9' alt='{$locale.028}' /></a>
+					{/if}
 				</div>
-				<div style='display:inline;float:left;margin-top:32px;margin-left:15px;'><img src='{$smarty.const.THEME}images/bells.gif' alt='' /></div>
-				<div class='sub-header' style='display:inline;float:left;margin-top:128px;margin-left:0px;'>
-					{section name=index loop=$headermenu}
-						{if !$smarty.section.index.first} &middot;{/if} <a style='color:#fff;' href='{$headermenu[index].link_url}' {if $headermenu[index].link_window == 1}target='_blank' {/if}>{$headermenu[index].link_name}</a>
-					{/section}
+				<div id='new_pm_header' style='display:inline;'>
+					{if $new_pm}
+						<a href='{$smarty.const.BASEDIR}pm.php?action=show_new'><img src='{$smarty.const.THEME}images/newmsgs.gif' height='9' alt='' /></a>&nbsp;
+					{/if}
 				</div>
-				<div class='sub-header' style='display:inline;float:right;margin-top:127px;height:5px;'>
-					{$bartitle}&nbsp;
-				</div>
-				<div id='countdown' style='white-space:no-wrap;text-align:center;float:right;font-weight:bold;width:380px;color:#CC0000;margin-top:148px;'></div>
+			</div>
+			<div style='float:left;margin-top:34px;margin-left:10px;'><img src='{$smarty.const.THEME}images/bells.gif' alt='' /></div>
+			<div class='sub-header' style='float:left;margin-top:128px;margin-left:0px;'>
+				{section name=index loop=$headermenu}
+					{if !$smarty.section.index.first} &middot;{/if} <a style='color:#fff;' href='{$headermenu[index].link_url}' {if $headermenu[index].link_window == 1}target='_blank' {/if}>{$headermenu[index].link_name}</a>
+				{/section}
+			</div>
+			<div id='countdown' style='white-space:no-wrap;text-align:center;float:right;font-weight:bold;width:380px;color:#CC0000;margin-top:148px;'></div>
+			<div style='display:inline;float:right;text-align:center;width:750px;margin-top:-155px;margin-right:15px;' />
+				<font size='6' color='{$settings.maintenance_color}'>{if $settings.maintenance}<b>MAINTENANCE MODE</b>{else}&nbsp;{/if}</font>
+				<br /><br /><br />
+				<font size='6' color='#CC0000'><b>{$settings.sitename}</b></font>
 			</div>
 		</td>
 	</tr>
