@@ -21,7 +21,13 @@
 {***************************************************************************}
 <table align='center' cellpadding='0' cellspacing='0' width='{$smarty.const.THEME_WIDTH}'>
 	<tr>
+		<td align='center' class='sub-cap-main' style='font-size:90%;'>
+			Luna theme copyright by Digitanium - <a href='http://www.php-fusion.co.uk' target='_blank' class='white'>PHP-Fusion</a> &copy; 2003-2005 - Adapted for ExiteCMS by WanWizard
+		</td>
+	</tr>
+	<tr>
 		<td class='footer'>
+			<br />
 			<table align='center' cellpadding='0' cellspacing='0' width='100%'>
 				<tr>
 					<td>

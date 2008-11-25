@@ -155,17 +155,14 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 							<tr  align='center'>
 								<td >
 									<table border='0' width='100%'>
-										<tr style='height:55px'>
-											<td align='right'>
-												{* room for other text *}
+										<tr>
+											<td align='center'>
+												<font size='6'<b>{$settings.sitename}</b></font>
 											</td>
 										</tr>
-										<tr style='height:55px'>
-											<td align='right'>
-											{if $settings.maintenance}
-												<br />
-												<font size='6' color='{$settings.maintenance_color}'><b>MAINTENANCE&nbsp;</b></font>
-											{/if}
+										<tr>
+											<td align='center'>
+												<font size='6' color='{$settings.maintenance_color}'><b>{if $settings.maintenance}MAINTENANCE MODE{else}&nbsp;{/if}</b></font>
 											</td>
 										</tr>
 									</table>
@@ -175,9 +172,9 @@ msgtimerid = setTimeout("checkMessages()", 300000);
 					</td>
 				</tr>
 			</table>
-			<table cellpadding='0' cellspacing='0' width='100%'>
+			<table cellpadding='0' cellspacing='0' width='100%' class='headermenu'>
 				<tr>
-					<td class='headermenu'>
+					<td class='sub-cap-main'>
 						<a href='.' onclick='fontGroter(-0.1); return false' title='Decrease font-size'><img src='{$smarty.const.THEME}images/minus.gif' alt='' border='0' /></a><a href='.' onclick='fontReset(0.7); return false' title='Restore default font-sizes'><img src='{$smarty.const.THEME}images/reset.gif' hspace='2' alt='' border='0' /></a><a href='.' onclick='fontGroter(0.1); return false' title='Increase font-size'><img src='{$smarty.const.THEME}images/plus.gif' alt='' border='0' /></a>
 						<div id='new_posts_header' style='display:inline;'>
 							{if $new_posts}

@@ -55,7 +55,7 @@ theme_init();
 +----------------------------------------------------*/
 
 // theme width definitions
-define('THEME_WIDTH', "994");
+define('THEME_WIDTH', "100%");
 define('SIDE_WIDTH', "170");
 
 // make sure this is defined, we need it later

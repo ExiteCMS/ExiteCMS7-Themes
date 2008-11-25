@@ -26,9 +26,11 @@
 		<td>
 			<table cellpadding='0' cellspacing='0' width='100%'>
 				<tr>
+			        <td class='capleft'><img src='{$smarty.const.THEME}images/blank.gif' width='8' height='20' alt='' style='display:block'></td>
 					<td class='cap-main'>
 						{$title|default:"&nbsp;"}
 					</td>
+			        <td class='capright'><img src='{$smarty.const.THEME}images/blank.gif' width='8' height='20' alt='' style='display:block'></td>
 				</tr>
 				<tr>
-					<td class='{$style|default:"main-body"}'>
+					<td colspan='3' class='{$style|default:"main-body"}'>
