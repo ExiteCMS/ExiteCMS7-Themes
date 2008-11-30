@@ -144,21 +144,22 @@ echo "<table class='content' align='center' width='".THEME_WIDTH."' cellspacing=
 /*-----------------------------------------------------+
 | Left column (only if not in full-screen mode)        |
 +-----------------------------------------------------*/
+$side = (LOCALEDIR == "LTR" ? "left" : "right");
 if (!FULL_SCREEN) {
 	// Get the config for all leftside panels
-	load_panels('left');
+	load_panels($side);
 	// if any leftside panel found
-	if (count_panels('left') > 0) {
-		echo "		<td valign='top' width='".SIDE_WIDTH."' class='side-border-left'>\n";
+	if (count_panels($side) > 0) {
+		echo "		<td valign='top' width='".SIDE_WIDTH."' class='side-border-$side'>\n";
 		// load the templates for the left-side column
-		load_templates('left', '');
+		load_templates($side, '');
 		echo "		</td>\n";
 	}
 }
 /*-----------------------------------------------------+
 | Center column                                        |
 +-----------------------------------------------------*/
-echo "		<td valign='top' class='main-bg'>";
+echo "		<td valign='top' class='main-bg'>\n";
 
 // if in full-screen mode, activate the navigation header panel
 if (FULL_SCREEN) {
@@ -184,14 +185,15 @@ echo "		</td>\n";
 /*-----------------------------------------------------+
 | Right column (only if not in full-screen mode)       |
 +-----------------------------------------------------*/
+$side = (LOCALEDIR == "LTR" ? "right" : "left");
 if (!FULL_SCREEN) {
 	// Get the config for all rightside panels
-	load_panels('right');
+	load_panels($side);
 	// if any rightside panel found
-	if (count_panels('right') > 0) {
-		echo "		<td valign='top' width='".SIDE_WIDTH."' class='side-border-right'>\n";
+	if (count_panels($side) > 0) {
+		echo "		<td valign='top' width='".SIDE_WIDTH."' class='side-border-$side'>\n";
 		// load the templates for the right-side column
-		load_templates('right', '');
+		load_templates($side, '');
 		echo "		</td>\n";
 	}
 }
@@ -208,10 +210,17 @@ echo "	</tr>
 // temp storage for template variables
 $variables = array();
 
-// define the footer panel
+// load the footer panels
+load_panels('footer');
+
+// get MySQL host info
+$variables['MySQLinfo'] = mysql_get_server_info();
+
+// define the footer template
 $template_panels[] = array('type' => 'footer', 'name' => '_footer', 'template' => '_footer.tpl');
 $template_variables['_footer'] = $variables;
 
+// load the footer templates
 load_templates('footer', '');
 
 /*---------------------------------------------------+
