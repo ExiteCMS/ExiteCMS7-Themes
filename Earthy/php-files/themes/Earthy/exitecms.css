@@ -33,7 +33,7 @@ a img					{ border:none; }
 a.wiki_link:link,a.wiki_link:visited { color:#34329C; text-decoration:none; border-width:0px 0px 1px 0px; border-style:dotted; border-color:#34329C; background-image: url(images/external_link.gif); background-position:right; background-repeat:no-repeat; padding-right:13px; }
 
 						/* horizontal lines */
-hr						{ border:none; color:#bbb; background-color:#bbb; height:1px; }
+hr						{ border:none; color:#679800; background-color:#679800; height:1px; }
 
 						/* dropdowns with options */
 optgroup				{ padding-bottom:5px; font-style:normal; }
@@ -44,7 +44,7 @@ optgroup				{ padding-bottom:5px; font-style:normal; }
 form					{ margin:0px; }
 
 						/* buttons */
-.button					{ font-size:0.8em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; font-weight:normal; width:auto; overflow:visible; font-weight: bold; color:#ffffff; background-color:#679800; border-top:1px #bbb solid; border-left:1px #bbb solid; border-bottom:1px #000 solid; border-right:1px #000 solid; cursor:pointer; margin:2px 0px 2px 0px; padding:0px; }
+.button					{ font-size:0.8em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu Sans",Arial,Sans-Serif; font-weight:normal; width:auto; overflow:visible; font-weight: bold; color:#dddddd; background-color:#679800; border-top:1px #bbb solid; border-left:1px #bbb solid; border-bottom:1px #000 solid; border-right:1px #000 solid; cursor:pointer; margin:2px 0px 2px 0px; padding:0px; }
 .button:hover			{ color:#FFFFFF; background-color:#679800; border-top:1px #999 solid; border-left:1px #999 solid; border-bottom:1px #fff solid; border-right:1px #fff solid; }
 
 						/* text entry fields */
@@ -68,7 +68,7 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 .main-body 				{ text-align:left; color:#444; background-color:#f8f2e1; padding:4px 4px 6px 4px; margin:0px; }
 
 						/* panels in the left & right columns (with and without padding, p.e. for images) */
-.side-body				{ color:#000; background-color:#f8f2e1; padding:4px 4px 6px 4px; }
+.side-body				{ color:#000; background-color:#f8f2e1; padding:4px 4px 4px 4px; }
 .side-body-nm			{ color:#000; background-color:#fff; }
 
 						/* tags for sub texts, captions, etc. */ 
@@ -82,7 +82,7 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 /* --- Browser window centered div ------------------------- */
 
 .splashscreen-h			{ font-size:0.8em; width:800px; position: absolute; top: 50%; left: 0px; width: 100%; margin-top: -150px; text-align: center; min-width: 900px; }
-.splashscreen-v			{ color:#444; background-color:#fff; border-left:3px solid #ccc; border-top:3px solid #ccc; border-right:3px solid #333; border-bottom:3px solid #333; position: relative; text-align: left; width: 500px; height: 250px; margin: 0px auto; }
+.splashscreen-v			{ color:#679800; background-color:#EDFBCF; border-left:3px solid #ccc; border-top:3px solid #ccc; border-right:3px solid #333; border-bottom:3px solid #333; position: relative; text-align: left; width: 500px; height: 250px; margin: 0px auto; }
 
 /* --- Header ---------------------------------------------- */
 
@@ -98,28 +98,28 @@ body					{ font-size:1em; font-family:Verdana,"Bitstream Vera Sans","Deja Vu San
 /* --- Panels ---------------------------------------------- */
 
 						/* center panel cell definitions */
-.main-panel				{ padding: 5px 5px 5px 5px; margin:0px 0px 5px 0px;  }
+.main-panel				{ padding: 0px 5px 5px 5px; margin:0px 0px 5px 0px;  }
 
 						/* side panel cell definitions */
-.side-panel				{ padding:0px 0px 0px 0px; margin:0px 0px 5px 0px; }
+.side-panel				{ background-color:#f8f2e1; padding:0px 0px 5px 0px; margin:0px; }
 
 						/* center panel title */
-.cap-main				{ font-weight:normal; text-align:left; color:#ffffff; background:url(images/green_bg.gif); font-size:1.2em; padding:3px 2px 3px 2px; }
+.cap-main				{ font-weight:normal; text-align:left; color:#ffffff; background:url(images/green_bg.gif); height:2em; line-height:2em; font-size:1.2em; padding:3px 2px 3px 5px; }
 
 						/* side panel title */
-.sub-cap-main			{ font-weight:normal; color:#ffffff; background:url(images/green_bg.gif); padding:0px 2px 0px 2px; }
+.sub-cap-main			{ font-weight:normal; color:#ffffff; background:url(images/green_bg.gif); height:2em; line-height:2em; padding:0px 2px 0px 2px; }
 
 						/* labels and separators in side panels */
-.side-label				{ color:#FFFFFF; background:url(images/green_bg.gif); margin:2px 0px 2px 0px; padding:1px 0px 1px 8px; white-space:nowrap;overflow:hidden; }
+.side-label				{ color:#FFFFFF; background:url(images/green_bg.gif); margin:4px 0px; padding:1px 0px 1px 8px; white-space:nowrap; overflow:hidden; }
 
 						/* labels and separators in body panels */
-.main-label				{ color:#333; background:url(images/green_bg.gif); padding:4px 4px 4px 4px; margin:0px 0px 5px 0px; border:1px #eee solid; white-space:nowrap;overflow:hidden; }
+.main-label				{ color:#fff; background:url(images/green_bg.gif); padding:4px 4px 4px 4px; margin:0px 0px 5px 0px; border:1px #eee solid; white-space:nowrap;overflow:hidden; }
 
 						/* links in side panels */
-.side-label-link		{ white-space:nowrap;overflow:hidden; background: url(images/green_bg.gif); margin:3px;}
+.side-label-link		{ white-space:nowrap;overflow:hidden; height:1.5em; line-height:1.5em; background: url(images/green_bgh.gif); margin:1px 0px;}
 
 						/* positioning of side-panel open/close buttons */
-.side-label-button		{ position:relative; float:right; top:2px; right:2px; }
+.side-label-button		{ position:relative; float:right; top:2em; right:2px; }
 
 						/* horizontal lines in side-panels */
 hr.side-hr				{height:1px; }
@@ -263,3 +263,6 @@ a#mbPrevLink:hover,a#mbNextLink:hover,a#mbCloseLink:hover { background-position:
 .side-label-link img	{ visibility: hidden; }
 .side-label-link a		{ color:#f8f2e1; }
 .infobar a				{ color:#f8f2e1; }
+.side-label-link a:hover	{ color:#ffffff;}
+.side-label-link:hover	{ background: url(images/green_bg.gif); }
+.infobar a:hover		{ color:#ffffff; }
