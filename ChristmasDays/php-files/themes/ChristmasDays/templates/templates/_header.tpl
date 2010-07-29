@@ -27,14 +27,14 @@
 	<meta name='keywords' content='{$settings.keywords}' />
 	<meta name='verify-v1' content='6uLZe0u5c6hJ3XE0LoGBQRuU7IdJ/B6BIa2Si7b1dkw=' />
 	{if $headparms|default:false != false}{$headparms}{/if}
-	<link href="{$smarty.const.THEME}exitecms__0001.css" rel="stylesheet" type="text/css" />
+	<link href="{$smarty.const.THEME}exitecms__0001.css?version=1" rel="stylesheet" type="text/css" />
 	{literal}
 	<style type="text/css">
 		.body-maint { margin: 5px 5px 5px 5px; color:#000; background-color:{/literal}{$settings.maintenance_color}{literal}; }
 	</style>
 	{/literal}
 	{if $favicon|default:false != false}<link rel='shortcut icon' href='{$favicon}' />{/if}
-	<script type='text/javascript' src='{$smarty.const.INCLUDES}jscripts/core_functions.js'></script>
+	<script type='text/javascript' src='{$smarty.const.INCLUDES}jscripts/core_functions.js?version=1'></script>
 	{if $smarty.const.LOAD_TINYMCE}
 		{include file="_load_tinymce.tpl"}
 	{/if}
@@ -91,56 +91,85 @@ function fontGroter(aantal) {
 	fontGrootte = Math.round(fontGrootte*100)/100;
 	document.body.style.fontSize = fontGrootte + 'em';
 	createCookie('pliFontSize',fontGrootte,365);
-}		
+}
 
 function fontReset(aantal) {
 	fontGrootte = Math.round(aantal*100)/100;
 	document.body.style.fontSize = fontGrootte + 'em';
 	createCookie('pliFontSize',fontGrootte,365);
 }
-
-function checkMessages() {
-	// check for new forum messages
-	var newmsg = AjaxCall("{/literal}{$smarty.const.BASEDIR}{literal}includes/ajax.response.php?request=posts");
-	if (newmsg != null && document.getElementById("new_posts_header")) {
-		if (newmsg > 0) {
-			document.getElementById("new_posts_header").innerHTML = "<a href='{/literal}{$smarty.const.BASEDIR}{literal}modules/forum_threads_list_panel/new_posts.php'><img src='{/literal}{$smarty.const.THEME}{literal}images/newposts.gif' height='9' alt='{/literal}{$locale.028}{literal}' /></a>&nbsp;";
-		} else {
-			document.getElementById("new_posts_header").innerHTML = "";
-		}
-	}
-	if (newmsg != null && document.getElementById("new_posts_panel")) {
-		if (newmsg > 0) {
-			document.getElementById("new_posts_panel_value").innerHTML = AjaxCall("{/literal}{$smarty.const.BASEDIR}{literal}includes/ajax.response.php?request=posts&parms=text");
-			document.getElementById("new_posts_panel").style.display = 'inline';
-		} else {
-			document.getElementById("new_posts_panel").style.display = 'none';
-		}
-	}
-	// check for new pm messages
-	var newpm = AjaxCall("{/literal}{$smarty.const.BASEDIR}{literal}includes/ajax.response.php?request=pm");
-	if (newpm != null && document.getElementById("new_pm_header")) {
-		if (newpm > 0) {
-			document.getElementById("new_pm_header").innerHTML = "<a href='{/literal}{$smarty.const.BASEDIR}{literal}pm.php?action=show_new'><img src='{/literal}{$smarty.const.THEME}{literal}images/newmsgs.gif' height='9' alt='' /></a>&nbsp;";
-		} else {
-			document.getElementById("new_pm_header").innerHTML = "";
-		}
-	}
-	if (newpm != null && document.getElementById("new_pm_panel")) {
-		if (newpm > 0) {
-			document.getElementById("new_pm_panel_value").innerHTML = AjaxCall("{/literal}{$smarty.const.BASEDIR}{literal}includes/ajax.response.php?request=pm&parms=text");
-			document.getElementById("new_pm_panel").style.display = 'inline';
-		} else {
-			document.getElementById("new_pm_panel").style.display = 'none';
-		}
-	}
-	// restart the timer for the next check, in 5 minutes
-	msgtimerid = setTimeout("checkMessages()", 300000);
-}
 {/literal}
 {if iMEMBER}
-// wait 15 seconds, then check for messages
-msgtimerid = setTimeout("checkMessages()", 15000);
+{literal}
+//
+// PM and forum post counter checks
+//
+function checkMessages() {
+	// check for new pm messages
+	var asyncajax = asyncajaxcall();
+	if (asyncajax) {
+		try {
+			// Asynchronous request, wait till we have it all
+			asyncajax.open('GET', exitecms_basedir + "includes/ajax.response.php?request=counters", true);
+			asyncajax.onreadystatechange = function() {
+				if(asyncajax.readyState == 4) {
+					if (asyncajax.status == 200) {
+						try {
+							// update the new message indicator
+							newmsg = eval('('+asyncajax.responseText+')');
+							if (document.getElementById("new_pm_header")) {
+								if (parseInt(newmsg.pmcount) > 0) {
+									document.getElementById("new_pm_header").innerHTML = "<a href='" + exitecms_basedir + "pm.php?action=show_new'><img src='" + exitecms_themedir + "images/newmsgs.gif' height='9' alt='' /></a>&nbsp;";
+								} else {
+									document.getElementById("new_pm_header").innerHTML = '';
+								}
+							}
+							if (document.getElementById("new_pm_panel")) {
+								if (parseInt(newmsg.pmcount) > 0) {
+									document.getElementById("new_pm_panel_value").innerHTML = newmsg.pmtext;
+									document.getElementById("new_pm_panel").style.display = 'inline';
+								} else {
+									document.getElementById("new_pm_panel").style.display = 'none';
+								}
+							}
+							if (document.getElementById("new_posts_header")) {
+								if (parseInt(newmsg.postcount) > 0) {
+									document.getElementById("new_posts_header").innerHTML = "<a href='" + exitecms_basedir + "modules/forum_threads_list_panel/new_posts.php'><img src='" + exitecms_themedir + "images/newposts.gif' height='9' alt='" + locale_028 + "' /></a>&nbsp;";
+								} else {
+									document.getElementById("new_posts_header").innerHTML = '';
+								}
+							}
+							if (document.getElementById("new_posts_panel")) {
+								if (parseInt(newmsg.postcount) > 0) {
+									document.getElementById("new_posts_panel_value").innerHTML = newmsg.posttext;
+									document.getElementById("new_posts_panel").style.display = 'inline';
+								} else {
+									document.getElementById("new_posts_panel").style.display = 'none';
+								}
+							}
+							// set a timer for the next check
+							msgtimerid = setTimeout("checkMessages()", 60000);
+						}
+						catch (e) {
+							// catch the error
+						}
+					}
+				}
+			};
+			asyncajax.send(null);
+		} catch (e) {
+			return null;
+		}
+	} else {
+		return null;
+	}
+}
+{/literal}
+var locale_028 = "{$locale.028}";
+var exitecms_basedir = "{$smarty.const.BASEDIR}";
+var exitecms_themedir = "{$smarty.const.THEME}";
+// start the timer for the first check, in 1 minute
+msgtimerid = setTimeout("checkMessages()", 60000);
 {/if}
 /* ]]> */
 </script>
